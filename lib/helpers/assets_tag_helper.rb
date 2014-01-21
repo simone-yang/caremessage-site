@@ -36,7 +36,8 @@ module AssetsTagHelper
 
   private
   def path_to_image(source)
-    "/images/#{source}"
+    # Change if we migrate to a different CDN
+    "//assets.caremessage.org/images/#{source}"
   end
 
   def content_tag_string(name, content, options, escape = true)
