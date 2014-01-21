@@ -21,13 +21,6 @@ module AssetsTagHelper
     end
   end
 
-  def video_tag(*sources)
-    multiple_sources_tag('video', sources) do |options|
-      options[:poster] = path_to_image(options[:poster]) if options[:poster]
-      options[:width], options[:height] = extract_dimensions(options.delete(:size)) if options[:size]
-    end
-  end
-
   def image_tag(source, options={})
     options = options.symbolize_keys
 
@@ -42,26 +35,6 @@ module AssetsTagHelper
   end
 
   private
-  def multiple_sources_tag(type, sources)
-    options = sources.extract_options!.symbolize_keys
-    sources.flatten!
-
-    yield options if block_given?
-
-    if sources.size > 1
-      content_tag(type, options) do
-        safe_join sources.map { |source| tag("source", :src => send("path_to_#{type}", source)) }
-      end
-    else
-      options[:src] = send("path_to_#{type}", sources.first)
-      content_tag(type, nil, options)
-    end
-  end
-
-  def path_to_video(source)
-    "/images/#{source}"
-  end
-
   def path_to_image(source)
     "/images/#{source}"
   end
@@ -99,7 +72,11 @@ module AssetsTagHelper
 
   def tag_option(key, value, escape)
     value = value.join(" ") if value.is_a?(Array)
-    value = h(value.to_s) if escape
+    value = ERB::Util.h(value.to_s) if escape
     %(#{key}="#{value}")
+  end
+  def safe_join(array, sep=" ")
+    sep = h(sep)
+    array.map { |i| ERB::Util.h(i) }.join(sep)
   end
 end

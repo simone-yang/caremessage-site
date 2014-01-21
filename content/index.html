@@ -3,7 +3,10 @@ body_id: welcome-index
 ---
 
 <div id=homepage-1>
-<%= video_tag "homepage-video.mp4", :controls => false, :autoplay => true, :class => 'homepage-video', :loop => true %>
+	<video controls="false" autoplay="true" class="homepage-video" autoplay="true" loop="true">
+	      <source src="/videos/homepage-video-webm.mp4" type="video/mp4"/>
+	      <!-- <source src="/videos/homepage-video-webm.webm" type="video/webm"/> -->
+	</video>
 <div class=hero-video-overlay>
 <div class=hero-video-overlay-inner>
 <div class=hero-video-overlay-inner-2>

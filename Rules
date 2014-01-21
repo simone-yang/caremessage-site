@@ -17,6 +17,10 @@ compile '/stylesheet/*/' do
   # don’t filter or layout
 end
 
+compile '/videos/*/' do
+  # don’t filter or layout
+end
+
 compile '/javascript/*/' do
   # don’t filter or layout
 end
@@ -32,6 +36,10 @@ compile '*' do
     filter :erb
     layout 'default'
   end
+end
+
+route '/videos/*/' do
+    item.identifier.chop + "." + item[:extension]
 end
 
 route '/pdf/*/' do
