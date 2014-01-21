@@ -21,6 +21,10 @@ compile '/javascript/*/' do
   # don’t filter or layout
 end
 
+compile '/pdf/*/' do
+  # don’t filter or layout
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -28,6 +32,10 @@ compile '*' do
     filter :erb
     layout 'default'
   end
+end
+
+route '/pdf/*/' do
+  item.identifier.chop + "." + item[:extension]
 end
 
 route '/fonts/*/' do
