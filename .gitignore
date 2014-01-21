@@ -12,6 +12,7 @@ test/tmp
 test/version_tmp
 tmp
 output
+crash.log
 
 # YARD artifacts
 .yardoc
