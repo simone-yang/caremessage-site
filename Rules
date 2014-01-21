@@ -39,7 +39,7 @@ compile '*' do
 end
 
 route '/videos/*/' do
-    item.identifier.chop + "." + item[:extension]
+  item.identifier.sub(/_.+\/$/, '') + "." + item[:extension]
 end
 
 route '/pdf/*/' do
