@@ -875,7 +875,7 @@ div.homepage-video {
   width:100%;
   height: 630px;
   overflow: hidden;
-  background: url('//assets.caremessage.org/images/programs-hero-2.jpg') no-repeat center center;
+  background: url('/images/programs-hero-2.jpg') no-repeat center center;
 }
 
 h1.video-hero {
@@ -1081,7 +1081,7 @@ a.trial:hover {
 
 #product-1 {
   background-color: #2e9fdb;
-  background-image: url('//assets.caremessage.org/images/white-gradient.png');
+  background-image: url('/images/white-gradient.png');
   background-position: center center;
   background-repeat: none;
   padding-bottom: 50px;
@@ -1101,7 +1101,7 @@ a.trial:hover {
 
 
 #mobile-module {
-  background-image: url('//assets.caremessage.org/images/mobile-hero.jpg');
+  background-image: url('/images/mobile-hero.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1235,7 +1235,7 @@ p.hero-product-caption {
 
 #product-3 {
   background-color: #000;
-  background-image: url('//assets.caremessage.org/images/white-gradient.png');
+  background-image: url('/images/white-gradient.png');
   background-position: center center;
   background-repeat: none;
   padding-bottom: 25px;
@@ -1287,7 +1287,7 @@ video.product-video {
    ============================ */
 
 #programs-hero {
-  background-image: url('//assets.caremessage.org/images/programs-hero-2.jpg');
+  background-image: url('/images/programs-hero-2.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1390,7 +1390,7 @@ body#welcome-mobile .container {
 }
 
 #mobile-hero {
-  background-image: url('//assets.caremessage.org/images/mobile-hero.jpg');
+  background-image: url('/images/mobile-hero.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1569,7 +1569,7 @@ p.hero-sub-sample {
 }
 
 .sweettalk-container {
-  background-image: url('//assets.caremessage.org/images/sweettalk-container.png');
+  background-image: url('/images/sweettalk-container.png');
   background-size: cover;
   width:374px;
   height: 701px;
@@ -1578,7 +1578,7 @@ p.hero-sub-sample {
 }
 
 .program-2-container {
-  background-image: url('//assets.caremessage.org/images/program-2-container.png');
+  background-image: url('/images/program-2-container.png');
   background-size: cover;
   width:374px;
   height: 701px;
@@ -1641,7 +1641,7 @@ ul.iphone-conversation li .sender {
 
 ul.iphone-conversation li .sender:before {
   position:absolute;
-  background-image: url('//assets.caremessage.org/images/chat-corner-grey.png');
+  background-image: url('/images/chat-corner-grey.png');
   content: '';
   background-size: contain;
   width: 16px;
@@ -1661,7 +1661,7 @@ ul.iphone-conversation li .myself {
 
 ul.iphone-conversation li .myself:before {
   position:absolute;
-  background-image: url('//assets.caremessage.org/images/chat-corner-green.png');
+  background-image: url('/images/chat-corner-green.png');
   content: '';
   background-position-y: 1px;
   background-size: contain;
@@ -1727,7 +1727,7 @@ h1.hero-grey {
    ============================ */
 
 #solutions-hero {
-  background-image: url('//assets.caremessage.org/images/partners-hero.jpg');
+  background-image: url('/images/partners-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1735,7 +1735,7 @@ h1.hero-grey {
 }
 
 #solutions-body {
-  background-image: url('//assets.caremessage.org/images/partners-hero-blur.jpg');
+  background-image: url('/images/partners-hero-blur.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1834,7 +1834,7 @@ p.solutions-caption-specific {
 }
 
 body#partners-clinics {
-  background-image: url('//assets.caremessage.org/images/solutions-clinics-hero.jpg');
+  background-image: url('/images/solutions-clinics-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1846,7 +1846,7 @@ body#partners-clinics {
    ============================ */
 
 body#partners-hospitals {
-  background-image: url('//assets.caremessage.org/images/solutions-hospitals.jpg');
+  background-image: url('/images/solutions-hospitals.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1858,7 +1858,7 @@ body#partners-hospitals {
    ============================ */
 
 body#partners-hospitals {
-  background-image: url('//assets.caremessage.org/images/solutions-hospitals.jpg');
+  background-image: url('/images/solutions-hospitals.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1870,7 +1870,7 @@ body#partners-hospitals {
    ============================ */
 
 body#partners-payers {
-  background-image: url('//assets.caremessage.org/images/solutions-payers.jpg');
+  background-image: url('/images/solutions-payers.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1882,7 +1882,7 @@ body#partners-payers {
    ============================ */
 
 body#partners-organizers {
-  background-image: url('//assets.caremessage.org/images/solutions-organizers.jpg');
+  background-image: url('/images/solutions-organizers.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1894,7 +1894,7 @@ body#partners-organizers {
    ============================ */
 
 body#partners-researchers {
-  background-image: url('//assets.caremessage.org/images/solutions-researchers.jpg');
+  background-image: url('/images/solutions-researchers.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -1908,7 +1908,7 @@ body#partners-researchers {
    ============================ */
 
 body#partners-government {
-  background-image: url('//assets.caremessage.org/images/solutions-govt-bg.jpg');
+  background-image: url('/images/solutions-govt-bg.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -2012,7 +2012,7 @@ body#partners-government {
    ============================ */
 
 #about-hero {
-  background-image: url('//assets.caremessage.org/images/about-hero.jpg');
+  background-image: url('/images/about-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -2093,7 +2093,7 @@ p.bio {
   border-top: 1px solid rgba(255,255,255,0.25);
   border-bottom: 1px solid rgba(255,255,255,0.25);
   background-color:#444;
-  background-image: url('//assets.caremessage.org/images/about-hero-blur.jpg');
+  background-image: url('/images/about-hero-blur.jpg');
 }
 
 #bio-container .row {
@@ -2134,58 +2134,58 @@ div.bio p {
 }
 
 #vineet {
-  background-image: url('//assets.caremessage.org/images/about-vineet-hero.jpg');
+  background-image: url('/images/about-vineet-hero.jpg');
   background-position: -60px -15px;
 }
 
 #james {
-  background-image: url('//assets.caremessage.org/images/about-james-hero.jpg');
+  background-image: url('/images/about-james-hero.jpg');
   background-position: -70px -25px;
 }
 
 #manuel {
-  background-image: url('//assets.caremessage.org/images/about-manuel-hero.jpg');
+  background-image: url('/images/about-manuel-hero.jpg');
   background-position: -85px -5px;
 }
 
 #cecilia {
-  background-image: url('//assets.caremessage.org/images/about-cecilia-hero.jpg');
+  background-image: url('/images/about-cecilia-hero.jpg');
   background-position: -75px 0px;
 }
 
 #krista {
-  background-image: url('//assets.caremessage.org/images/about-krista-hero.jpg');
+  background-image: url('/images/about-krista-hero.jpg');
   background-position: -88px -20px;
 }
 
 #greg {
-  background-image: url('//assets.caremessage.org/images/about-greg-hero.jpg');
+  background-image: url('/images/about-greg-hero.jpg');
   background-position: -95px 0px;
 }
 
 #patricia {
-  background-image: url('//assets.caremessage.org/images/about-patricia-hero.jpg');
+  background-image: url('/images/about-patricia-hero.jpg');
   background-position: -45px -10px;
 }
 
 #nic {
-  background-image: url('//assets.caremessage.org/images/about-nic-hero.jpg');
+  background-image: url('/images/about-nic-hero.jpg');
   background-position: -80px 0px;
 }
 
 #aditya {
-  background-image: url('//assets.caremessage.org/images/about-aditya-hero.jpg');
+  background-image: url('/images/about-aditya-hero.jpg');
   background-position: -85px -10px;
 }
 
 #daniel {
-  background-image: url('//assets.caremessage.org/images/about-daniel-hero.jpg');
+  background-image: url('/images/about-daniel-hero.jpg');
   background-position: -10px -9px;
   background-size: 250px;
 }
 
 #bruno {
-  background-image: url('//assets.caremessage.org/images/about-bruno-hero.jpg');
+  background-image: url('/images/about-bruno-hero.jpg');
   background-position: -146px -111px;
   background-size: 731px;
 }
@@ -2210,7 +2210,7 @@ span.bod-link {
 }
 
 #values-hero {
-  background-image: url('//assets.caremessage.org/images/values-hero.jpg');
+  background-image: url('/images/values-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -2219,7 +2219,7 @@ span.bod-link {
 
 #values-container {
   border-top: 1px solid rgba(255,255,255,0.25);
-  background-image: url('//assets.caremessage.org/images/values-hero-blur.jpg');
+  background-image: url('/images/values-hero-blur.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
@@ -2322,7 +2322,7 @@ body#welcome-blog .container {
 }
 
 #blog-hero {
-  background-image: url('//assets.caremessage.org/images/blog-hero.jpg');
+  background-image: url('/images/blog-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center bottom;
@@ -2330,7 +2330,7 @@ body#welcome-blog .container {
   }
 
 #blog-body {
-  background-image: url('//assets.caremessage.org/images/blog-hero-blurred.jpg');
+  background-image: url('/images/blog-hero-blurred.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center bottom;
