@@ -789,6 +789,12 @@ img.social-icon {
   width: 32px;
   height: 32px;
   margin-left: 10px;
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in-out;
+}
+
+img.social-icon:hover {
+	opacity: 1;
 }
 
 nav.footer-nav ul {
