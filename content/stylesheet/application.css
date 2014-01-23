@@ -1323,6 +1323,8 @@ body#product-programs .primary-nav .navbar-nav>li>a, body#product-programs .prim
   color: #fff;
   background-size: cover;
   text-align:center;
+   background-image: url('/images/programs-hero-2-blur.jpg');
+  background-attachment: fixed;
 }
 
 .programs-hero-caption p.programs {
@@ -1736,7 +1738,6 @@ h1.hero-grey {
   background-image: url('/images/partners-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
   color: #fff;
 }
 
@@ -1744,7 +1745,6 @@ h1.hero-grey {
   background-image: url('/images/partners-hero-blur.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
   border-top: 1px solid rgba(255,255,255,0.25);
 }
 
@@ -1813,7 +1813,9 @@ span.chevron {font-size: 30px;}
   padding: 50px 0px;
   text-align:center;
   background-size:cover;
-}
+  background-attachment:fixed;
+  background-position: center center;
+  }
 
 /* ============================
    Section 8.1 - Solutions - Clinics
@@ -1828,6 +1830,11 @@ span.chevron {font-size: 30px;}
 .solutions h1.hero{
   font-size: 48px;
 }
+
+.solutions h1.hero-grey {
+	font-size: 48px;
+}
+
 .dark h1.hero-grey {
   color:#ddd;
 }
@@ -1839,86 +1846,97 @@ p.solutions-caption-specific {
   margin-bottom: 25px;
 }
 
-body#partners-clinics {
+
+#clinics-header {
   background-image: url('/images/solutions-clinics-hero.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
-
    }
+
+#clinics-body {
+  background-image: url('/images/solutions-clinics-hero-blur.jpg');
+ }
 
 /* ============================
    Section 8.2 - Solutions - Hospitals
    ============================ */
 
-body#partners-hospitals {
+#hospitals-header {
   background-image: url('/images/solutions-hospitals.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
+
 
    }
 
-   /* ============================
-   Section 8.2 - Solutions - Hospitals
-   ============================ */
-
-body#partners-hospitals {
-  background-image: url('/images/solutions-hospitals.jpg');
-  background-size:cover !important;
-  background-attachment:fixed;
-  background-position: center center;
-
-   }
+#hospitals-body {
+  background-image: url('/images/solutions-hospitals-blur.jpg');
+  }
 
 /* ============================
    Section 8.3 - Solutions - Payers
    ============================ */
 
-body#partners-payers {
+#payers-header {
   background-image: url('/images/solutions-payers.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
+
 
    }
+
+#payers-body {
+  background-image: url('/images/solutions-payers-blur.jpg');
+  }
 
 /* ============================
    Section 8.4 - Solutions - Organizers
    ============================ */
 
-body#partners-organizers {
+#organizers-header {
   background-image: url('/images/solutions-organizers.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
+
 
    }
+
+#organizers-body {
+  background-image: url('/images/solutions-organizers-blur.jpg');
+  }
+
 
 /* ============================
    Section 8.5 - Solutions - Researchers
    ============================ */
 
-body#partners-researchers {
+#researchers-header {
   background-image: url('/images/solutions-researchers.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
+
 
    }
 
-
+#researchers-body {
+  background-image: url('/images/solutions-researchers-blur.jpg');
+  }
 
 /* ============================
    Section 8.6 - Solutions - Government
    ============================ */
 
-body#partners-government {
+#government-header {
   background-image: url('/images/solutions-govt-bg.jpg');
   background-size:cover !important;
   background-attachment:fixed;
-  background-position: center center;
+
+
    }
+
+#government-body {
+  background-image: url('/images/solutions-govt-bg-blur.jpg');
+  }
 
 /* ============================
    Section 9 - Customized mailchimp form
