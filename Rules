@@ -18,7 +18,7 @@ compile '/fonts/*/' do
 end
 
 compile '/stylesheet/*/' do
-  # don’t filter or layout
+  filter :minify
 end
 
 compile '/videos/*/' do
@@ -26,7 +26,7 @@ compile '/videos/*/' do
 end
 
 compile '/javascript/*/' do
-  # don’t filter or layout
+  filter :minify
 end
 
 compile '/pdf/*/' do
