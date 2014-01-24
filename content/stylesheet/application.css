@@ -814,19 +814,16 @@ nav.footer-nav ul li a:hover {
   cursor:pointer;
 }
 
-nav.footer-nav ul:nth-child(1) {
+nav.footer-nav ul.ul-product {
   border-top: 3px solid #2797ff;
-
 }
 
-nav.footer-nav ul:nth-child(2) {
+nav.footer-nav ul.ul-partners {
   border-top: 3px solid #ee086c;
-
 }
 
-nav.footer-nav ul:nth-child(3) {
+nav.footer-nav ul.ul-about {
   border-top: 3px solid #f5f818;
-
 }
 
 nav.footer-nav ul li.footer-nav-heading {
