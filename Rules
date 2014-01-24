@@ -30,6 +30,10 @@ compile '/javascript/all/' do
   filter :minify
 end
 
+compile '/javascript/*/' do
+  filter :minify
+end
+
 compile '/pdf/*/' do
   # don’t filter or layout
 end
@@ -64,7 +68,7 @@ route '/javascript/include/*/' do
   # ignore
 end
 
-route '/javascript/all/' do
+route '/javascript/*/' do
     item.identifier.chop + "." + item[:extension]
 end
 

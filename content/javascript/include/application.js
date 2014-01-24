@@ -1,21 +1,6 @@
 $(function () {
   $("a.read-bio").popover();
   $("input, textarea").placeholder();
-
-  var Browser = {
-    Version: function() {
-      var version = 999; // we assume a sane browser
-      if (navigator.appVersion.indexOf("MSIE") != -1)
-        // bah, IE again, lets downgrade version number
-        version = parseFloat(navigator.appVersion.split("MSIE")[1]);
-      return version;
-    }
-  }
-
-  // Typekit bugs on lower ies
-  if(!(Browser.Version() < 9)) {
-    try{Typekit.load();}catch(e){}
-  }
 });
 
 $(function(){

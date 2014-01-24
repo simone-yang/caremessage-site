@@ -1,3 +1,7 @@
+.wf-loading h1 {
+    visibility: hidden;
+}
+
 .large-overlay {
   overflow-y: scroll;
   position: fixed;

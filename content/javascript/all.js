@@ -1,5 +1,4 @@
 //= require include/jquery.min.js
-//= require include/typekit.js
 //= require include/bootstrap.min.js
 //= require include/wufoo.js
 //= require include/retina_min.js
