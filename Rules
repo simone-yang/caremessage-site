@@ -35,7 +35,7 @@ end
 
 compile '*' do
   if item.binary?
-    # filter :image_compressor, :pngout => false
+    # don't do
   else
     filter :erb
     layout 'default'
