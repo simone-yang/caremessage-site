@@ -61,7 +61,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.open-menu').on('click', function(e){
+  $('.open-menu').on('click', function(e){
       $('.master').addClass('moveleft');
   $('nav.menu-overlay').addClass('show-right');
 });
