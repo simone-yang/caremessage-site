@@ -2399,3 +2399,8 @@ li.tumblr_post {
 .placeholder {
   color: #999;
 }
+
+.tumblr_body img {
+width: 100%;
+margin: 10px 0px;
+}
