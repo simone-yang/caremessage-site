@@ -1374,14 +1374,22 @@ p.contact {
   color: #333!important;
   margin-bottom:20px !important;
 }
-a.contact {
+a.contact, a.about-bottom {
   color: #03ae6f;
   border-color: #03ae6f;
 }
 
-a.contact:hover {
+a.contact:hover, a.about-bottom:hover {
   background-color: #03ae6f;
   color: #fff;
+}
+
+a.about-bottom {
+	margin: 0px 4px;
+}
+
+a.about-bottom span.glyphicon {
+	font-size: 11px;
 }
 
 a.contact:active {
@@ -2033,6 +2041,19 @@ p.solutions-caption-specific {
 /* ============================
    Section 10 - About
    ============================ */
+
+.call-to-action-caption-about {
+	text-align: center;
+	font-size: 36px;
+	font-weight:100;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.call-to-action-button-about {
+	text-align:center;
+	margin-bottom: 15px;
+}
 
 #about-hero {
   background-image: url('/images/about-hero.jpg');
