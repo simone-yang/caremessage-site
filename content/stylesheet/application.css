@@ -2234,6 +2234,17 @@ div.bio p {
   background-size: 731px;
 }
 
+#gabe {
+  background-image: url('/images/gabe-bio.jpg');
+  background-position: -85px 0px;
+}
+
+#phil {
+	background-image: url('/images/phil-bio.jpg');
+	background-position: -33px -12px;
+	background-size: 380px;
+}
+
 p.bod {
   color:#444;
   font-size: 16px;
