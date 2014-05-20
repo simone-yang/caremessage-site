@@ -2239,6 +2239,13 @@ div.bio p {
   background-position: -85px 0px;
 }
 
+#karen {
+  background-image: url('/images/karen-thumb.jpg');
+  background-position: -35px -9px;
+  background-size: 225px;
+}
+
+
 #phil {
 	background-image: url('/images/phil-bio.jpg');
 	background-position: -33px -12px;
