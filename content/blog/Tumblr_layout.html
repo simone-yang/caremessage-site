@@ -208,6 +208,13 @@ display: inline;
             <li class="tumblr_post tumblr_text_post">
                     {block:Title}
                         <div class="tumblr_title"><a href="{Permalink}">{Title}</a></div>
+
+                  {block:Date}
+                        <p>
+                          {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}. Posted by {PostAuthorName}
+                        </p>
+                        {/block:Date}
+
                     {/block:Title}
                       <div class="tumblr_body">
                       {Body}
@@ -224,19 +231,13 @@ display: inline;
 
 <div id="share-buttons">
             <ul class="like_and_reblog_buttons">
-              <li>
-                  {block:Date}
-                        <p class="tag">
-                          {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}
-                        </p>
-                        {/block:Date}
-              </li>
+            <li></li>
               <li class="like-control" style="margin-top: 8px;">{LikeButton}</li>
            <li class="reblog-control" style="margin-top: 8px;">{ReblogButton}</li>
 
         <li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a></li>
                                                                    <li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li>
-                                                                    <li><a href="mailto:?subject={URLEncodedShareString}&amp;body={URLEncodedMailSummary}" class="share-item mail"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a></li>
+
              </li>
 
           </ul>
