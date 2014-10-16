@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="http://caremessage.org/stylesheet/application.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//use.typekit.net/cpt8vwp.js"></script>
+    <script src="http://caremessage.org/javascript/typekit.js"></script>
+
+    <!--[if lt IE 10]>
+      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="/stylesheet/old_ie.css">
+    <![endif]-->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-47358249-1']);
+      _gaq.push(['_setDomainName', 'caremessage.org']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+        $(function() {
+            $('.js-share').each(function() {
+                $(this).popover({
+                    content: $(this).parent().find('.js-share-popover').html(),
+                    placement: "top",
+                    html: true
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+    a.tag:before {
+        content: '#';
+    }
+    .tag {
+        color: #bbb;
+        margin-top: 10px
+    }
+    .like_and_reblog_buttons {
+        border: 0px solid #e8e8e8;
+        border-radius: 3px;
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .like_and_reblog_buttons li {
+        float: right;
+        margin: 0;
+        padding: 7px 15px;
+        height: 20px;
+    }
+
+    .like_and_reblog_buttons li:first-child {
+        border-right: 0px solid #e8e8e8;
+        float: left;
+        padding-left: 0px;
+    }
+
+    .like-control {
+        margin-top: 8px;
+    }
+    .reblog-control{
+        margin-top: 8px;
+    }
+
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+        </style>
+  </head>
+
+  <body id="welcome-blog">
+
+    <nav class="menu-overlay dark large-overlay">
+      <h1 class="nav-hero">Menu <span class="close-menu x-icon">&times;</span></h1>
+      <ul class="main">
+        <li><a class="na  gation close-menu" href="http://caremessage.org/">Home</a></li>
+        <li><a class="toggle" data-toggle="collapse" href="#product-collapse">Product</a></li>
+        <div id="product-collapse" class="panel-collapse collapse">
+          <ul class=sub>
+            <li><a class="navigation close-menu" href="//caremessage.org/platform">Platform</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/programs">Programs</a></li>
+          </ul>
+        </div>
+        <li><a class="toggle" data-toggle="collapse" href="#partners-collapse">Solutions</a></li>
+        <div id="partners-collapse" class="panel-collapse collapse">
+          <ul class="sub">
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/">Overview</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/clinics/">Clinics</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/hospitals/">Hospitals</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/payers/">Payers</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/government/">Government</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/researchers/">Researchers</a></li>
+            <li><a class="navigation close-menu" href="//caremessage.org/solutions/organizers/">Organizers</a></li>
+          </ul>
+        </div>
+        <li><a class="navigation close-menu" href="//blog.caremessage.org">Blog</a></li>
+        <li><a class="navigation close-menu" href="//caremessage.org/about">About</a></li>
+      </ul>
+    </nav>
+
+    <nav class="contact-overlay dark large-overlay">
+      <h1 class=nav-hero>Contact Us <span class="close-menu x-icon">&times;</span></h1>
+      <form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+        action="https://caremessage.wufoo.com/forms/mklt92r0mpe0r7/#public">
+        <input class="field text medium" id="Field1" maxlength="255" name="Field1" onkeyup="" placeholder="First Name" required="" tabindex="1" type="text" value="">
+        <input class="field text medium" id="Field2" maxlength="255" name="Field2" onkeyup="" placeholder="Last Name" required="" tabindex="2" type="text" value="">
+        <input class="field text medium" id="Field3" maxlength="255" name="Field3" onkeyup="" placeholder="Organization" required="" tabindex="3" type="text" value="">
+        <input class="field text medium" id="Field4" maxlength="255" name="Field4" placeholder="E-mail Address" spellcheck="false" tabindex="4" type="email" value=""> <input class="field text medium" id="Field5" maxlength="255" name="Field5" placeholder="Phone Number" tabindex="5" type="tel" value="">
+        <textarea class="field textarea medium" id="Field7" name="Field7" onkeyup="" placeholder="Your Message" rows="4" spellcheck="true" tabindex="6"></textarea>
+        <input class="submit" id="saveForm" name="saveForm" type="submit" value="Submit"> <input type="hidden" id="idstamp" name="idstamp" value="BiPtiPH8BV9A4CIhwnGFr170tQy2uoD+J8IyGMmn/jU=" />
+      </form>
+    </nav>
+
+    <div class="master">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top primary-nav" role="navigation">
+        <div class="container navbar-container">
+          <div class="navbar-collapse collapse" id="contact-form-toggle">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="open-contact"><span class="glyphicon glyphicon-send"></span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+           <!--<a class="navbar-brand" href="#">caremessage</a>-->
+           <a href="{BlogURL}"><img class="logo-main" src="http://static.tumblr.com/wzhlxjl/XK1ndjm8s/logo.png"></a>
+          </div>
+
+          <div class="navbar-collapse collapse" id="menu-toggle">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="open-menu"><span class="glyphicon glyphicon-th-list"></span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+      <!--End Navbar-->
+
+      <!-- Fixed navbar (secondary) -->
+      <div class="navbar navbar-default navbar-fixed-top secondary-nav secondary-hidden" role="navigation">
+        <div class="container navbar-container">
+          <div class="navbar-collapse collapse" id="contact-form-toggle">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="open-contact"><span class="glyphicon glyphicon-send"></span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+
+          <div class="navbar-header">
+            <!--<a class="navbar-brand" href="#">caremessage</a>-->
+            <a href="{BlogURL}"><img class="logo-main" src="http://caremessage.org/images/logo-dark.png"></a>
+          </div>
+
+          <div class="navbar-collapse collapse" id=menu-toggle>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="open-menu"><span class="glyphicon glyphicon-th-list"></span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+      <!--End Navbar (secondary) -->
+{block:IndexPage}
+      <div id=blog-hero class="dark solutions solutions-header">
+      <div class="container body-container">
+
+      <h1 class=hero style="margin-bottom: 0px;">The CareMessage Blog.</h1>
+      <p class=hero-sub-3>Stay updated on latest news and updates from CareMessage and our partner organizations.</p>
+
+      </div>
+      </div>
+{/block:IndexPage}
+
+      <div id="blog-body">
+      <div class="container">
+
+      <ol id="posts" class="tumblr_posts">
+
+        {block:Posts}
+
+                {block:Text}
+            <li class="tumblr_post tumblr_text_post">
+                    {block:Title}
+                        <div class="tumblr_title"><a href="{Permalink}">{Title}</a></div>
+                    {/block:Title}
+                      <div class="tumblr_body">
+                      {Body}
+                      </div>
+                    {block:HasTags}
+                        <div>
+                          {block:Tags}
+                          <a href="{TagURL}" class="tag">{Tag}</a>
+                         {/block:Tags}
+                        </div>
+                    {/block:HasTags}
+
+                <div>
+
+<div id="share-buttons">
+            <ul class="like_and_reblog_buttons">
+              <li>
+                  {block:Date}
+                        <p class="tag">
+                          {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}
+                        </p>
+                        {/block:Date}
+              </li>
+              <li class="like-control" style="margin-top: 8px;">{LikeButton}</li>
+           <li class="reblog-control" style="margin-top: 8px;">{ReblogButton}</li>
+
+        <li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a></li>
+                                                                   <li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li>
+                                                                    <li><a href="mailto:?subject={URLEncodedShareString}&amp;body={URLEncodedMailSummary}" class="share-item mail"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a></li>
+             </li>
+
+          </ul>
+       </div>
+          </div>
+            </li>
+
+        {/block:Text}
+
+          {block:Photo}
+            <li class="post photo">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photo}{block:Panorama}
+                    <li class="post panorama">
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                        {LinkCloseTag}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Panorama}{block:Photoset}
+                    <li class="post photoset">
+                        {Photoset-500}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photoset}{block:Quote}
+                    <li class="post quote">
+                        "{Quote}"
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </li>
+                {/block:Quote}{block:Link}
+                    <li class="post link">
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </li>
+                {/block:Link}{block:Chat}
+                    <li class="post chat">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}{Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </li>
+                {/block:Chat}{block:Video}
+                    <li class="post video">
+                        {Video-500}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Video}{block:Audio}
+                    <li class="post audio">
+                        {AudioEmbed}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Audio}
+
+    {/block:Posts}
+
+</ol>
+      </div>
+
+ {block:Pagination}{block:PreviousPage}
+                <a href="{PreviousPage}">Previous</a>
+            {/block:PreviousPage}{block:JumpPagination length="5"}{block:CurrentPage}
+                    <span class="current_page">{PageNumber}</span>
+                {/block:CurrentPage}{block:JumpPage}
+                    <a class="jump_page" href="{URL}">{PageNumber}</a>
+                {/block:JumpPage}{/block:JumpPagination}{block:NextPage}
+                <a href="{NextPage}">Next</a>
+            {/block:NextPage}{/block:Pagination}
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <nav class="footer-nav">
+                <ul class="col-xs-3 col-sm-2 col-md-2 ul-product">
+                  <li class="footer-nav-heading">Product</li>
+                  <li><a href="//caremessage.org/platform/">Platform</a></li>
+                  <li><a href="//caremessage.org/programs/">Programs</a></li>
+                  <li><a href="//caremessage.org/mobile/">Why Mobile?</a></li>
+                </ul>
+
+                <ul class="col-xs-3 col-sm-2 col-md-2 ul-partners">
+                  <li class="footer-nav-heading">Solutions</li>
+                  <li><a href="//caremessage.org/solutions/clinics/">Clinics</a></li>
+                  <li><a href="//caremessage.org/solutions/hospitals/">Hospitals</a></li>
+                  <li><a href="//caremessage.org/solutions/payers/">Payers</a></li>
+                  <li><a href="//caremessage.org/solutions/government/">Government</a></li>
+                  <li><a href="//caremessage.org/solutions/researchers/">Researchers</a></li>
+                  <li><a href="//caremessage.org/solutions/organizers/">Organizers</a></li>
+                </ul>
+
+                <ul class="col-xs-3 col-sm-2 col-md-2 ul-about">
+                  <li class="footer-nav-heading">About</li>
+                  <li><a href="//caremessage.org/about#team">Team</a></li>
+                  <li><a href="//caremessage.org/about#values">Values</a></li>
+                  <li><a href="//blog.caremessage.org">Blog</a></li>
+                  <li><a href="https://app.caremessage.org/terms_of_use/" target=_blank>Terms of Use</a></li>
+                  <li><a href="https://app.caremessage.org/privacy_policy/" target=_blank>Privacy Policy</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div> <!-- .row -->
+
+          <hr/>
+
+          &copy; 2014 caremessage
+          <div class="social-icons-container">
+            <a href="http://blog.caremessage.org/rss/" target="_blank">
+            <img class="social-icon" src="http://caremessage.org/images/rss.png">
+            <a href="http://facebook.com/caremessage/" target="_blank">
+            <img class="social-icon" src="http://caremessage.org/images/fb-icon.png">
+            <a href="http://twitter.com/caremessage/" target="_blank">
+            <img class="social-icon" src="http://caremessage.org/images/tw-icon.png">
+            </div>
+        </div>
+      </footer>
+
+    </div> <!--.master-->
+    <script type="text/javascript">
+      // Add a script element as a child of the body
+      function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "//caremessage.org/javascript/all.js";
+      document.body.appendChild(element);
+      }
+
+      // Check for browser support of event handling capability
+      if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
+  </body>
+</html>
