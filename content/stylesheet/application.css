@@ -881,6 +881,8 @@ div.homepage-video {
   height: 630px;
   overflow: hidden;
   background: url('/images/programs-hero-2.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1.video-hero {
@@ -954,6 +956,7 @@ h1.hero {
 
 }
 
+
 h2.hero {
   font-weight: 300;
   font-size: 28px;
@@ -969,6 +972,32 @@ h2.hero-sub {
   letter-spacing: 1px;
   font-size: 24px;
   text-align:center;
+}
+
+h2.hero-sub-link {
+  text-align:center;
+}
+
+h2.hero-sub-link a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align:center;
+  padding: 5px 8px 4px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  transition: all 0.25s;
+}
+
+h2.hero-sub-link a i.fa {
+  font-size: 12px;
+}
+
+h2.hero-sub-link a:hover {
+  color:#111;
+  background-color:#fff;
 }
 
 div.center-block {
@@ -1008,9 +1037,9 @@ img.hero-sub {
 
 img.supporter-logo {
   display:block;
-  margin: 20px auto;
+  margin: 0px auto;
   width:100%;
-  padding: 10px;
+  padding: 0px;
 }
 
 img.phone-product-2 {
@@ -1104,9 +1133,13 @@ a.trial:hover {
   margin: 50px auto;
 }
 
+#product-2 img.hero-above {
+  width: 125px;
+}
+
 
 #mobile-module {
-  background-image: url('/images/mobile-hero.jpg');
+  background-image: url('/images/mobile-hero-blur.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1117,6 +1150,64 @@ a.trial:hover {
   border-bottom: 2px solid rgba(0,0,0,0.2);
   display:table;
   width:100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#mobile-module h1.hero {
+  text-align:left;
+  margin-bottom: 10px;
+
+}
+
+#mobile-module p.hero-sub-3 {
+  text-align:left;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#mobile-module img.hero-footer {
+  width: 100px;
+}
+
+#platform-module {
+  background-image: url('/images/mobile-hero-blur.jpg');
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
+  height:450px;
+  color: #fff;
+  position: relative;
+  border-top: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  display:table;
+  width:100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#platform-module img.hero-product-footer {
+  width: 970px;
+  float:right;
+  overflow: visible;
+}
+
+#platform-module h1.hero {
+  text-align:left;
+  margin-bottom: 10px;
+
+}
+
+#platform-module p.hero-sub-3 {
+  text-align:left;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#platform-module img.hero-footer {
+  width: 100px;
+  margin-top: 25px;
 }
 
 p.module {
@@ -1168,7 +1259,8 @@ p.module a:hover {
 }
 
 #product-1-sub {
-  margin: 50px 0px;
+  margin-top:0px;
+  margin-bottom: 50px;
 }
 
 .dark h2.hero-sub {color: #fff;}
@@ -1186,11 +1278,41 @@ p.module a:hover {
   margin: 50px 0px;
 }
 
+#product-2 h3.hero {
+  text-align:center;
+  font-weight: 500;
+}
+
+#product-2 p.other-features-caption {
+  text-align:center;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
 #product-2 hr {
   margin: 50px 0px;
 }
 
 .light h1.hero {color: #000;}
+
+.light h1.hero-left {
+    color:#999;
+    font-weight: 100;
+    font-size: 32px;
+    text-align:left;
+    letter-spacing: -1px;
+    width: 50%;
+}
+
+.light h1.hero-left strong {
+    color:#111;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
 
 .light p.hero-sub-3 {
   margin: 0px 50px;
@@ -1292,7 +1414,7 @@ video.product-video {
    ============================ */
 
 #programs-hero {
-  background-image: url('/images/programs-hero-2.jpg');
+  background-image: url('/images/mobile-hero.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1304,10 +1426,45 @@ video.product-video {
   position: relative;
 }
 
+#programs-hero .solutions-header .container {
+  background-color: transparent;
+}
+
+
+
+#programs-hero  p.hero-sub-3 {
+  width: 700px;
+}
+
+#programs-hero  h1.hero {
+  margin-top: 0px;
+}
+
+#programs-hero .program-container-inner {
+    display:table-cell;
+  vertical-align: middle;
+}
+
 
 
 body#product-programs .primary-nav .navbar-nav>li>a, body#product-programs .primary-nav .navbar-nav>li>a:hover, body#product-programs .primary-nav .navbar-brand {
 
+}
+
+#programs-body {
+    background-size: cover;
+   background-image: url('/images/mobile-hero-blur.jpg');
+  background-attachment: fixed;
+}
+
+#programs-body p {
+  color: #fff;
+}
+
+#programs-header {
+      background-size: cover;
+   background-image: url('/images/mobile-hero.jpg');
+  background-attachment: fixed;
 }
 
 .programs-hero-caption {
@@ -1322,7 +1479,7 @@ body#product-programs .primary-nav .navbar-nav>li>a, body#product-programs .prim
   color: #fff;
   background-size: cover;
   text-align:center;
-   background-image: url('/images/programs-hero-2-blur.jpg');
+   background-image: url('/images/mobile-hero-blur.jpg');
   background-attachment: fixed;
 }
 
@@ -1357,7 +1514,7 @@ h3.hero {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #03ae6f;
+  color: #2996cc;
 
 }
 
@@ -1991,6 +2148,7 @@ p.solutions-caption-specific {
   letter-spacing: 0px;
   font-size: 32px;
   font-weight: 100;
+  text-align: left;
 }
 
 /* ============================
@@ -2042,6 +2200,11 @@ p.solutions-caption-specific {
    Section 10 - About
    ============================ */
 
+#partners {
+  margin-top:50px;
+  margin-bottom: 50px;
+   }
+
 .call-to-action-caption-about {
 	text-align: center;
 	font-size: 36px;
@@ -2060,10 +2223,16 @@ p.solutions-caption-specific {
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center center;
-  height:100%;
+  height:400px;
    }
 
-
+#team-hero {
+  background-image: url('/images/team-hero.jpg');
+  background-size:cover !important;
+  background-attachment:fixed;
+  background-position: center center;
+  height:400px;
+   }
 
 
 h2.about {
@@ -2072,7 +2241,18 @@ h2.about {
   width: 90%;
   font-size: 36px;
   letter-spacing: -0.5px;
-  color:#fff;
+  color:#000;
+  line-height: 130%;
+  margin-bottom:0px;
+}
+
+h2.about-description {
+  font-weight: 100;
+  margin-top:0px;
+  width: 90%;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  color:#000;
   line-height: 130%;
   margin-bottom:0px;
 }
@@ -2080,12 +2260,12 @@ h2.about {
 p.about-sub {
   font-weight: 600;
   margin-top: 15px;
-  color: #eee;
+  color: #999;
 }
 
 h3.title {
   margin-top: 0px;
-  color:#ddd;
+  color:#333;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
@@ -2096,7 +2276,7 @@ h3.title {
 
 h3.subheader {
   margin-top: 0px;
-  color:#ddd;
+  color:#333;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 18px;
@@ -2115,6 +2295,37 @@ img.tab-bio {
 
 }
 
+.bio-row {
+  margin-bottom: 20px;
+}
+
+.bio-row .col-xs-2 {
+  padding-top: 10px;
+    border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.bio-row .col-xs-2:hover {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+img.tab-bio-circle {
+  width: 100%;
+  border-radius:100px;
+  box-shadow: 0px 1px 3px #aaa;
+  display:block;
+}
+
+p.tab-bio-caption {
+  color: #111;
+  text-align:center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
 .bio-image-container {
   height:225px;
   overflow: hidden;
@@ -2124,7 +2335,7 @@ img.tab-bio {
 p.bio {
   font-size: 16px;
   line-height:150%;
-  color:#fff;
+  color:#111;
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -2340,7 +2551,7 @@ p.purpose-bio {
 h3.bod-name {
   font-size: 24px;
   font-weight: 100;
-  color:#fff;
+  color:#111;
   margin-bottom:5px;
 }
 
@@ -2348,8 +2559,6 @@ h3.bod-title {
   margin-bottom: 5px;
   margin-top: 0px;
   color:#bbb;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-size: 12px;
   font-weight:500;
   line-height:140%;
@@ -2366,13 +2575,15 @@ a.read-bio .glyphicon{
 }
 
 .bio-collapse {
-  color:#eee;
-
+  color:#333;
   -webkit-margin-collapse: separate;
 }
 
 .bio-collapse p {
   margin: 25px 0px;
+  font-weight: 300;
+  padding-left: 15px;
+  border-left: 1px solid #ddd;
 }
 
 /* ============================

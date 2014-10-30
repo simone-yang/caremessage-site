@@ -2,17 +2,17 @@
 body_id: welcome-programs
 ---
 
-<div id=programs-hero>
-<div class="container body-container dark">
+<div data-stellar-background-ratio="0.2" id=programs-header  class="dark solutions solutions-header">
+<div class="container body-container">
 
-
-<div class=programs-hero-caption>
-<div class=container>
-
-<h1 class=hero>Programs that patients love.</h1>
-<p class=programs>CareMessage creates highly engaging text messaging campaigns to improve health literacy and disease self&ndash;management skills for diverse populations.</p>
+<h1 class=hero style="margin-bottom: 0px;">Programs that Patients Love.</h1>
+<p class=hero-sub-3>CareMessage creates highly engaging text messaging campaigns to improve health literacy and disease self&ndash;management skills for diverse populations.</p>
 </div>
-<div class=container>
+</div>
+
+<div class="solutions-body" id="programs-body">
+<div class="container dark">
+
 <div class="row extra-space">
 	<div class="col-xs-4">
 	<%= image_tag("solutions-caregiver.png", class: "hero-sub") %>
@@ -34,12 +34,12 @@ body_id: welcome-programs
 
 </div> <!--.row-->
 
-<p class=programs-tomasa><strong>Photo:</strong> Tomasa, a mother of two, is participating in a CareMessage program to take control of her health.</p>
-</div>
-</div> <!-- .programs-hero-caption-->
+
+
 
 </div>
-</div> <!--.programs-hero-->
+</div>
+
 
 <div id=programs-1>
 <div class="container light">
@@ -243,131 +243,24 @@ body_id: welcome-programs
 
 </div>
 </div> <!--.homepage-1-->
+<div id='platform-module'>
 
-<div id=sample-2>
-<div class="container light">
+	<div class=container>
+	<div class=row>
+	<div class=col-xs-7>
+		<%= image_tag("platform-2014.png", class: "hero-product-footer") %>
+	</div><!--.col-xs-5-->
+	<div class=col-xs-5>
+		<%= image_tag("plug-and-play.png", class: "hero-footer") %>
+		<h1 class="hero">Plug and Play Platform</h1>
+		<p class="hero-sub-3">Our web-based platform runs on our secure, HIPAA-compliant cloud, and is compatible with all internet-enable devices. Because CareMessage is easy to use and doesn't require any installation or special configuration, your team can spend less time on IT, and more time focused on patients.</p>
+		<a class="video-hero-call" href="/platform">View Platform</a>
+	</div><!--.row-->
 
-	<%= image_tag("design-process.png", class: "hero-above") %>
-	<h1 class=hero>Our Design Process</h1>
-	<p class=hero-sub-3>We believe that addressing healthcare is a multi-stage problem solving process that needs to put the <i>user</i> at the center of our thinking. Before we can make an impact, we need to understand.</p>
+	</div> <!--.container-->
 
-		<div class=product-tabs>
+</div>
 
-	<ul class="nav nav-pills">
-	  <li class=active><a href="#phase-1" data-toggle="tab">Phase I</a></li>
-	  <li><a href="#phase-2" data-toggle="tab">Phase II</a></li>
-	  <li><a href="#phase-3" data-toggle="tab">Phase III</a></li>
-	</ul>
-
-	<div class="tab-content extra-space">
-	  <div class="tab-pane fade in active" id="phase-1">
-		<div class=row>
-		<div class="col-xs-4 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-comment"></span>Interview</h3>
-		<p>We gain an understanding of our users through in-depth interviews with all stakeholders, including patients, physicians, health educators, care coordinators, and etc.</p>
-		</div>
-
-		<div class="col-xs-4 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-eye-open"></span>Observe</h3>
-		<p>We observe, document, and evaluate patient visits, group meetings, diabetes classes, one-on-one health education appointments, and etc.</p>
-		</div>
-
-		<div class="col-xs-4 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-ok-circle"></span>Validate</h3>
-		<p>We complement our findings with clinically-proven interventions and techniques, such as motivational interviewing, and values-based affirmation.</p>
-		</div>
-
-		</div><!--.row -->
-
-	  </div>
-	  <div class="tab-pane fade" id="phase-2">
-
-		<div class=row>
-		<div class="col-xs-4 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-edit"></span>Create</h3>
-		<p>We take the immense quantity of data generated in Phase I to outline specific programs. These are structured as either short 4-6 week modules, or longer 3-12 month programs.</p>
-		</div>
-
-		<div class="col-xs-4 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-stats"></span>Analyze</h3>
-		<p>We also decide which metrics and overall trends - such as blood glucose, weight, medication adherence - are important to track for each program.</p>
-		</div>
-
-		<div class="col-xs-4 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-saved"></span>Review</h3>
-		<p>All of our modules and programs undergo a thorough review by our medical staff and members of our Clinical Review Board. In addition, we ensure a fourth grade reading level as measured by industry-standard Flesch-Kincaid scores.</p>
-		</div>
-
-		</div><!--.row -->
-
-	  </div>
-	  <div class="tab-pane fade" id="phase-3">
-		 		<div class=row>
-		<div class="col-xs-3 design-process">
-		</div>
-
-		<div class="col-xs-6 design-process">
-		<h3 class=hero><span class="glyphicon glyphicon-refresh"></span>Iterate</h3>
-		<p>Using our built-in analytics engine, we then test our programs with with a group of patients to optimize for many factors, including timing, tonality, frequency and complexity. All programs are approved by our partner organizations prior to launch.</p>
-		</div>
-
-
-		</div><!--.row -->
-	  </div>
-
-	  </div>
-	</div><!-- .product-tabs -->
-
-<hr/>
-	<h1 class=hero>Our Design Principles</h1>
-	<p class=hero-sub-3>Humans are dynamic individuals and every patient is unique.<br/>Everything that we send out has a purpose centered around our users.</p>
-<div class="row extra-space">
-	<div class="col-xs-4">
-	<%= image_tag("programs-design.png", class: "hero-above") %>
-	<h3 class=hero>Human-Centered Design</h3>
-	<p class=other-features-caption>We design our interactions to appeal to the unique circumstances and preferences of our users, mirroring the experience of a live health coaching session.</p>
-	</div>
-
-	<div class="col-xs-4">
-	<%= image_tag("programs-engagement.png", class: "hero-above") %>
-	<h3 class=hero>Purposeful Engagement</h2>
-	<p class=other-features-caption> Every single message has a unique purpose, whether to impart knowledge, incite a behavior, or record a piece of self-reported data.</p>
-	</div>
-
-	<div class="col-xs-4">
-	<%= image_tag("programs-unique.png", class: "hero-above") %>
-	<h3 class=hero>Focus on 'Extreme Users'</h3>
-	<p class=other-features-caption>Custom-tailored for patients with co-morbidities and those with unique clinical traits, cultural preferences, and literacy barriers.</p>
-	</div>
-</div> <!--.row-->
-
-<div class="row extra-space">
-	<div class="col-xs-4">
-	<%= image_tag("programs-hci.png", class: "hero-above") %>
-	<h3 class=hero>Persuasive Technology</h3>
-	<p class=other-features-caption>We change behaviors and attitudes not through coercion, but rather persuasion by building on the results, theories, and methods of rhetoric and human-computer interaction.</p>
-	</div>
-
-	<div class="col-xs-4">
-	<%= image_tag("programs-clinical.png", class: "hero-above") %>
-	<h3 class=hero>Clinical Expertise</h3>
-	<p class=other-features-caption>We use motivational interviewing and values-based affirmation which are clinically proven approaches to behavior change.</p>
-	</div>
-
-	<div class="col-xs-4">
-	<%= image_tag("programs-caregiver.png", class: "hero-above") %>
-	<h3 class=hero>Caregiver Support</h3>
-	<p class=other-features-caption>We realize the growing importance of caregiver support, so we help caregivers stay updated on their loved one's progress and improve their own effectiveness.</p>
-	</div>
-
-</div> <!--.row-->
-
-
-
-
-</div> <!--.container -->
-
-</div><!--.sample-2 -->
 
 
 <div class="call-to-action-footer">

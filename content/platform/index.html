@@ -4,28 +4,40 @@ body_id: welcome-platform
 
 <div id=product-1 class=dark>
 <div class="container body-container">
+	<h1 class=hero>Patient Engagement, Supercharged</h1>
+	<p class=hero-sub-3>Create automated, interactive, and engaging conversations via text and voice messaging with thousands of patients. Use our evidence-based disease management <a href="/programs">programs</a> to educate and empower your patients.</p>
 
-	<h1 class=hero>Mission Control for Care Management.</h1>
-	<p class=hero-sub-3>Simplify care management and connect with your patients through text and voice messaging.</p>
-
-	<%= image_tag("platform-hq-prod.png", class: "hero-product") %>
-
+	<div class="tab-content">
+		<div class="tab-pane fade in active" id="home">
+		<%= image_tag("platform-2014.png", class: "hero-product") %>
+		</div>
+		<div class="tab-pane fade" id="inform">
+		<%= image_tag("inform-2014.png", class: "hero-product") %>
+		</div>
+		<div class="tab-pane fade" id="connect">
+		<%= image_tag("connect-2014.png", class: "hero-product") %>
+		</div>
+		<div class="tab-pane fade" id="empower">
+		<%= image_tag("empower-2014.png", class: "hero-product") %>
+		</div>
+	</div>
 
 
 	<div class=row id=product-1-sub>
 	<div class="col-xs-4">
-	<%= image_tag("solutions-outreach.png", class: "hero-sub") %>
-	<h2 class=hero-sub>Inform</h2>
+	
+	<h2 class=hero-sub-link><a href="#inform" role="tab" data-toggle="tab">Inform <i class="fa fa-chevron-right"></i></a></h2>
 	<p class=caption>Automate reminders and followups<br/>to simplify your workflow.</p>
+
 	</div>
 	<div class="col-xs-4">
-	<%= image_tag("solutions-connect.png", class: "hero-sub") %>
-	<h2 class=hero-sub>Connect</h2>
+	
+	<h2 class=hero-sub-link><a href="#connect" role="tab" data-toggle="tab">Connect <i class="fa fa-chevron-right"></i></a></h2>
 	<p class=caption>Have interactive and personalized dialogues with many patients at once.</p>
 	</div>
 	<div class="col-xs-4">
-	<%= image_tag("solutions-caregiver.png", class: "hero-sub") %>
-	<h2 class=hero-sub>Empower</h2>
+	
+	<h2 class=hero-sub-link><a href="#empower" role="tab" data-toggle="tab">Empower <i class="fa fa-chevron-right"></i></a></h2>
 	<p class=caption>Engage high risk patients with behavior change programs that work.</p>
 	</div>
 
@@ -44,88 +56,109 @@ body_id: welcome-platform
 	<%= image_tag("platform_cloud.png", class: "hero-above") %>
 	<h1 class=hero>A  Secure Cloud-Based Platform</h1>
 	<p class=hero-sub-3>No software to install, no computer expertise to get started, no servers or IT management to worry about. Access our secure platform from any device with an internet connection.</p>
-	<%= image_tag("app-cloud.jpg", class: "hero-product") %>
-	<p class=hero-product-caption><strong>No Compromise.</strong> The same great user experience carries over from desktop to mobile.</p>
+	<div class=row>
+		<div class=col-sm-4>
+			<%= image_tag("platform-ul.png", class: "hero-above") %>
+			<h3 class="hero">Batch Patient Upload</h3>
+			<p class="other-features-caption">Automatically create patient profiles using your existing data. Select EMRs and population health management tools can already integrate with CareMessage.</p>
+		</div>
+		<div class=col-sm-4>
+			<%= image_tag("platform-pop.png", class: "hero-above") %>
+			<h3 class="hero">Population Health</h3>
+			<p class="other-features-caption">Create groups based on filters such as condition, demographic information or health status, making it easier to target and manage specific patient populations.</p>
+		</div>
+		<div class=col-sm-4>
+			<%= image_tag("platform-re.png", class: "hero-above") %>
+			<h3 class="hero">Reminders</h3>
+			<p class="other-features-caption">Send patients pre-appointment information and appointment reminders to reduce no shows. Seamlessly collect RSVPs to to confirm patients plan on attending their appointments.</p>
+		</div>
 
-<hr/>
-
-
-	<%= image_tag("centralized.png", class: "hero-above") %>
-	<h1 class=hero>Centralized Care Management</h1>
-	<p class=hero-sub-3>Manage groups, appointments, and events with the click of a button.</p>
-	<div class=product-tabs>
-
-	<ul class="nav nav-pills">
-	  <li class=active><a href="#groups" data-toggle="tab">Groups</a></li>
-	  <li><a href="#appointments" data-toggle="tab">Appointments</a></li>
-	  <li><a href="#events" data-toggle="tab">Events</a></li>
-	</ul>
-
-	<div class="tab-content">
-	  <div class="tab-pane fade in active" id="groups">
-		<div class=truncate><%= image_tag("product-group.jpg", class: "hero-product") %></div>
-		<p class=hero-product-caption>Categorize all of your patients into distinct groups based on shared characteristics, such as a common disease/condition or a common meeting time, making for easy outreach later.</p>
-	  </div>
-	  <div class="tab-pane fade" id="appointments">
-		 <div class=truncate><%= image_tag("product-appts.jpg", class: "hero-product") %></div>
-		<p class=hero-product-caption>View all your upcoming appointments, see who&#8217;s coming and who isn&#8217;t, and save attendance all from one easy interface. Use automated text and voice reminders to reduce no-shows and collect RSVPs. </p>
-	  </div>
-	  <div class="tab-pane fade" id="events">
-		   <div class=truncate><%= image_tag("product-events.jpg", class: "hero-product") %></div>
-		<p class=hero-product-caption>Finally, an easy way to manage diabetes classes, teen pregnancy workshops and other ongoing events with your healthcare organization. Improve program attendance rates by sending out automated reminders for upcoming events to all attendees with the click of a button, automatically collect RSVPs to see who&#8217;s coming and save attendance.</p>
-	  </div>
-
-	  </div>
-	</div><!-- .product-tabs -->
-
-<hr/>
-
-
-	<%= image_tag("supercharge.png", class: "hero-above") %>
-	<h1 class=hero>Patient Engagement, Supercharged</h1>
-	<p class=hero-sub-3>Create automated, interactive, and engaging conversations via text and voice messaging with thousands of patients. Use our evidence-based disease management <a href="/programs">programs</a> to educate and empower your patients.</p>
-
-		<div class=product-tabs>
-
-	<ul class="nav nav-pills">
-	  <li class=active><a href="#streams" data-toggle="tab">Educational Programs</a></li>
-	  <li><a href="#messenger" data-toggle="tab">Messenger</a></li>
-	</ul>
-
-	<div class="tab-content">
-	  <div class="tab-pane fade in active" id="streams">
-		<div class=truncate><%= image_tag("product-stream.jpg", class: "hero-product") %></div>
-		<p class=hero-product-caption>Enroll all of your patients in our powerful, evidence-based health education programs that replicate the experience of interacting with a live health coach. Automatically collect engagement and self-reported data on patient progress in between visits, save valuable time and human resources, and improve overall patient satisfaction.</p>
-	  </div>
-	  <div class="tab-pane fade" id="messenger">
-		 <div class=truncate><%= image_tag("product-messenger.jpg", class: "hero-product") %></div>
-		<p class=hero-product-caption>Say no to time-consuming phone calls. Instantly communicate with your patients with messenger. Our platform saves all incoming responses - just like an email inbox - so you can reply whenever you want, wherever you want.</p>
-	  </div>
-
-	  </div>
-	</div><!-- .product-tabs -->
-
-<hr/>
-
-
-<div class=row>
-	<div class="col-xs-6">
-	<%= image_tag("data.png", class: "sub-hero-above") %>
-	<h2 class=hero>Data at your Fingertips</h2>
-	<p class=other-features-caption>Collecting answers to a Health Risk Assessment, sending out a post-appointment satisfaction survey, or collecting post-evaluation feedback has never been easier. Do all of this and more with no programming expertise required and use our powerful analytics engine to easily quantify both engagement and self-reported data.</p>
 	</div>
 
-	<div class="col-xs-6">
-	<%= image_tag("integrate.png", class: "sub-hero-above") %>
-	<h2 class=hero>Integration</h2>
-	<p class=other-features-caption>We know how important having a seamless flow of information is to you, and our primary goal is to help improve your workflow, not over-complicate it. That&#8217;s why we will work with you to figure out the optimal data transfer and/or integration strategies to get you up and running with minimal effort.</p>
+	<div class=row>
+		<div class=col-sm-4>
+			<%= image_tag("platform-go.png", class: "hero-above") %>
+			<h3 class="hero">Group Outreach</h3>
+			<p class="other-features-caption">Send one message to a group of patients once or on a recurring basis. Use text, voice and/or email messaging to monitor patient behavior and provide more targeted outreach.</p>
+		</div>
+		<div class=col-sm-4>
+			<%= image_tag("platform-dc.png", class: "hero-above") %>
+			<h3 class="hero">Data Collection</h3>
+			<p class="other-features-caption">Send surveys and collect data from any patient population. Review results in real time and use our analytics engine to quantify both engagement and self-reported data.</p>
+		</div>
+		<div class=col-sm-4>
+			<%= image_tag("platform-pp.png", class: "hero-above") %>
+			<h3 class="hero">Personalized Programs</h3>
+			<p class="other-features-caption">Support patients outside of the clinic with automated health education programs that are bilingual, appropriate for diverse populations, and under a fifth grade reading level.</p>
+		</div>
+
 	</div>
-
-</div> <!--.row-->
-
 </div>
+
 </div> <!--.product-2 -->
-<div id=mobile-module>	<p class=module><a href="/mobile">Learn more about why we bet on mobile outreach &#8250;</a></p>
+<div id='mobile-module'>
+
+	<div class=container>
+	<div class=row>
+	<div class=col-xs-5>
+	<div class="sweettalk-container">
+	<div class="iphone-msg-container">
+	<div class="tab-content">
+	  <div class="tab-pane fade in active" id="diabetes-english">
+		
+		<ul class="iphone-conversation">
+		<li><div class="sender">When was the last time you had a foot exam by your doctor? A) 1-3 months B) 3-6 months C) 6-9 months D) 9-12 months E) I don't know</div></li>
+		<li><div class="myself">C</div></li>
+
+		<li><div class="sender">What kind of feedback did you get? A) All good B) Failed Visual Inspection C) Poor Circulation, D) Failed Sensation Test.</div></li>
+		<li><div class="myself">C</div></li>
+
+		<li><div class="sender">Since then, have you been performing regular foot exams at home? This can help you watch for the early signs of foot disease from diabetes.</div></li>
+		<li><div class="myself">No</div></li>
+
+		<li><div class="sender">You should look between your toes for A) cuts or sores B) Loss of sensation C) Change in color D) signs of infection. Have you noticed any of these?</div></li>
+		<li><div class="myself">Yes, C</div></li>
+
+		<li><div class="sender">Make sure to bring this up the next time you visit your doctor. Have you scheduled your next appointment?</div></li>
+		<li><div class="myself">Yes</div></li>
+
+		</ul>
+	  </div><!-- .english -->
+
+	  <div class="tab-pane fade" id="diabetes-spanish">
+
+	  	<ul class="iphone-conversation">
+		<li><div class="sender">¿Cuanto días quiere caminar? Responda con el número.</div></li>
+		<li><div class="myself">5</div></li>
+
+		<li><div class="sender">¿Cuanto minutos por día? Responda con el número.</div></li>
+		<li><div class="myself">20</div></li>
+
+		<li><div class="sender">¡Muy Bien! Le vamos a recordar que salga a caminar. Hacer ejercicio le puede dar mas energía durante el día.</div></li>
+
+		<li><div class="sender">Buenas tardes Don Jose, ¿salió a caminar hoy? Responda SI o NO</div></li>
+		<li><div class="myself">Si</div></li>
+
+		<li><div class="sender">¡Que bueno! ¿Cuantos minutos caminó? Responda con el número.</div></li>
+		<li><div class="myself">30</div></li>
+
+		<li><div class="sender">¡Mas de lo que dijo! ¿Cómo se sintió? A) Muy bien B) Un poco cansado C) No podía respirar bien D) No Pude terminar</div></li>
+
+	  </ul></div> <!-- .spanish -->
+	</div> <!--.tab-content -->
+
+	</div> <!--.iphone-msg-container -->
+
+	</div><!--.sweettalk-container-->
+	</div><!--.col-xs-5-->
+	<div class=col-xs-7>
+		<%= image_tag("out-of-box.png", class: "hero-footer") %>
+		<h1 class="hero">Out of the Box Programs</h1>
+		<p class="hero-sub-3">Our team of medical doctors and public health professionals is constantly creating new cutting-edge programs designed to help patients manage a wide range of chonic conditions.</p>
+		<a class="video-hero-call" href="/programs">View Programs</a>
+	</div><!--.row-->
+
+	</div> <!--.container-->
 
 </div>
 
