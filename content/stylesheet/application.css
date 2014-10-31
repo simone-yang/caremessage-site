@@ -2234,6 +2234,81 @@ p.solutions-caption-specific {
   height:400px;
    }
 
+  #careers-hero {
+  background-image: url('/images/careers-hero.jpg');
+  background-size:cover !important;
+  background-attachment:fixed;
+  background-position: center center;
+  height:600px;
+   }
+
+#careers-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.light h1.hero-left-career strong {
+
+
+}
+
+.light h1.hero-left-career {
+    width:100%;
+
+}
+
+p.career-sub {
+  font-size: 18px;
+font-weight: 300;
+line-height: 150%;
+}
+
+a.position-nav strong {
+  font-weight: 500;
+  display:block;
+}
+
+ul.career-sub-list {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0px;
+}
+
+ul.career-sub-list li {
+  line-height: 150%;
+}
+
+ul.career-sub-list li.first {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+  list-style:none;
+}
+
+a.position-nav {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+   h1.hero-careers {
+    color: #fff;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+   }
+
+   p.hero-sub-careers {
+    width: 50%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+   }
+
 
 h2.about {
   font-weight: 100;
