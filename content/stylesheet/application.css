@@ -159,7 +159,7 @@ input, textarea {
   border: 0px;
   border-radius: 0px;
   background-color: #222;
-  border-left: 3px solid #03ae6f;
+  border-left: 3px solid #2996cc;
   -webkit-appearance: none;
   color: #fff;
   width: 100%;
@@ -186,13 +186,13 @@ input.submit {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.1s ease-in-out;
-  color: #03ae6f;
-  border-color: #03ae6f;
+  color: #2996cc;
+  border-color: #2996cc;
   margin-top: 15px;
 }
 
 input.submit:hover {
-  background-color: #03ae6f;
+  background-color: #2996cc;
   color: #fff;
 }
 
@@ -706,6 +706,17 @@ img.hero-above {
   margin: 25px auto;
 }
 
+img.hero-special  {
+  width: 100px;
+  display: block;
+  margin: 25px auto;
+    background-image: url('/images/product-bg-blur.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 img.sub-hero-above {
   width: 50px;
   display: block;
@@ -725,14 +736,15 @@ p {letter-spacing: 0.15px;}
 }
 
 .call-to-action-caption {
-  display:inline-block;
-  width:70%;
-  color:#fff;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
   font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight:300;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 2px; */
+  font-weight: 300;
   padding-top: 5px;
+  text-align: center;
 }
 
 .call-to-action-button {
@@ -759,13 +771,21 @@ p.hero-sub-3 sup {font-size: 12px;}
 
 footer {
   background-color:#333;
-  padding: 40px 0px;
+  padding-top:40px;
+  padding-bottom: 10px;
   color: #fff;
 }
 
 footer span.footer-logo {
   font-size: 24px;
   font-weight: 300;
+}
+
+p.copyright {
+  font-size: 8px;
+  text-transform: uppercase;
+  text-align:center;
+  letter-spacing: 2px;
 }
 
 p.footer-address {
@@ -780,6 +800,8 @@ footer a {
 
 footer hr {
   border-top: 1px solid #777;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .social-icons-container {
@@ -807,6 +829,20 @@ nav.footer-nav ul {
   transition: opacity 0.25s ease-in-out;
 }
 
+nav.footer-nav ul.ul-contact {
+  padding-right: 0px;
+  margin-right: 0px;
+  width: 45.21111111%;
+}
+
+nav.footer-nav ul.ul-contact li.contact {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+img.map {width:100%;}
+
 nav.footer-nav ul:hover {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
@@ -816,32 +852,37 @@ nav.footer-nav ul li a:hover {
   cursor:pointer;
 }
 
-nav.footer-nav ul.ul-product {
-  border-top: 3px solid #2797ff;
-}
 
-nav.footer-nav ul.ul-partners {
-  border-top: 3px solid #ee086c;
-}
-
-nav.footer-nav ul.ul-about {
-  border-top: 3px solid #f5f818;
-}
 
 nav.footer-nav ul li.footer-nav-heading {
   padding-top: 7px;
   padding-bottom: 7px;
-  text-transform:uppercase;
-  letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
-  color: #999;
+  color: #ccc
+}
+
+nav.footer-nav ul li.footer-nav-heading:after {
+  height: 1px;
+  width:100%;
+  display:block;
+  background-color: #5ac8fb;
+  margin-top: 5px;
+  background-image: -webkit-gradient(linear, left center, right center, from(rgb(90, 200, 251)),to(rgb(82, 237, 199)));
+  background-image: -webkit-linear-gradient(left, rgb(90, 200, 251), rgb(82, 237, 199));
+  background-image: -moz-linear-gradient(left, rgb(90, 200, 251), rgb(82, 237, 199));
+  background-image: -o-linear-gradient(left, rgb(90, 200, 251), rgb(82, 237, 199));
+  background-image: -ms-linear-gradient(left, rgb(90, 200, 251), rgb(82, 237, 199));
+  background-image: linear-gradient(left, rgb(90, 200, 251), rgb(82, 237, 199));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#5ac8fb', EndColorStr='#52edc7');
+  content:'';
 }
 
 nav.footer-nav ul li {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.15px;
+  margin-bottom: 2px;
 }
 
 /* ============================
@@ -1074,15 +1115,16 @@ p.caption {
 }
 
 a.call-to-action {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px 15px 8px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 6px 10px 6px;
   border-radius: 5px;
   border: 1px solid #fff;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.1s ease-in-out;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
+  transition: all .1s ease-in-out;
+  margin-left: 15px;
 }
 
 a.call-to-action:hover {
@@ -1114,13 +1156,58 @@ a.trial:hover {
    ============================ */
 
 #product-1 {
-  background-color: #2e9fdb;
-  background-image: url('/images/white-gradient.png');
+  background-color: #222;
+  background-image: url('/images/product-bg.jpg');
   background-position: center center;
   background-repeat: none;
-  padding-bottom: 50px;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 0px;
   color: #fff;
 
+}
+
+.carousel-blur {
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:100%;
+  background-image: url('/images/product-bg-blur.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel-caption {
+  bottom: -91px;
+}
+
+.carousel-inner {
+  overflow:visible;
+}
+
+.carousel-caption h3 {
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow:none;
+}
+
+
+
+.carousel-caption h3 strong {
+  font-weight: 600;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none!important;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control i.fa {
+position: absolute;
+top: 50%;
+z-index: 5;
+display: inline-block;
 }
 
 #product-1-overview {
@@ -1135,6 +1222,10 @@ a.trial:hover {
 
 #product-2 img.hero-above {
   width: 125px;
+}
+
+#product-2 h3.hero {
+  color: #333;
 }
 
 
@@ -1171,7 +1262,7 @@ a.trial:hover {
 }
 
 #platform-module {
-  background-image: url('/images/mobile-hero-blur.jpg');
+  background-image: url('/images/product-bg-blur.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1295,16 +1386,55 @@ p.module a:hover {
 
 .light h1.hero {color: #000;}
 
+.light h1.hero-center {
+    color:#999;
+    font-weight: 100;
+    font-size: 32px;
+    text-align:center;
+    letter-spacing: -1px;
+    
+}
+
+.light h1.hero-center strong {
+    color:#111;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
 .light h1.hero-left {
     color:#999;
     font-weight: 100;
     font-size: 32px;
     text-align:left;
     letter-spacing: -1px;
-    width: 50%;
+    
 }
 
 .light h1.hero-left strong {
+    color:#111;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.light h1.hero-left-1 {
+    color:#999;
+    font-weight: 100;
+    font-size: 32px;
+    text-align:left;
+    letter-spacing: -1px;
+    
+}
+
+.light h1.hero-left-1 strong {
     color:#111;
     font-weight: 100;
     font-size: 20px;
@@ -1323,7 +1453,7 @@ p.module a:hover {
 }
 
 img.hero-product {
-  margin-top: 50px;
+  margin-top: 25px;
   width: 100%;
 }
 
@@ -1523,6 +1653,10 @@ h3.hero {
   margin-bottom:25px;
 }
 
+.extra-bottom {
+  margin-bottom: 25px!important;
+}
+
 h3.hero span.glyphicon {
   margin-right: 8px;
   font-size: 12px;
@@ -1532,12 +1666,12 @@ p.contact {
   margin-bottom:20px !important;
 }
 a.contact, a.about-bottom {
-  color: #03ae6f;
-  border-color: #03ae6f;
+  color: #2996cc;
+  border-color: #2996cc;
 }
 
 a.contact:hover, a.about-bottom:hover {
-  background-color: #03ae6f;
+  background-color: #2996cc;
   color: #fff;
 }
 
@@ -1858,6 +1992,26 @@ ul.conditions li {
   color: #444;
 }
 
+ul.conditions-list {
+  list-style-type:none;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: 300;
+  text-align:left;
+}
+
+ul.conditions-list li {
+  margin-bottom: 3px;
+}
+
+ul.conditions-list li.title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  color: #999;
+  border-bottom: 1px solid #999;
+}
+
 div.sender, div.myself {
   font-family: "Helvetica Neue", Helvetica, sans-serif !important;
 }
@@ -2127,12 +2281,12 @@ p.solutions-caption-specific {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.1s ease-in-out;
-  color: #03ae6f;
-  border-color: #03ae6f;
+  color: #2996cc;
+  border-color: #2996cc;
 }
 
 #mc_embed_signup input.button:hover {
-  background-color: #03ae6f;
+  background-color: #2996cc;
   color: #fff;
 }
 
@@ -2200,10 +2354,20 @@ p.solutions-caption-specific {
    Section 10 - About
    ============================ */
 
-#partners {
+#partners-1 {
   margin-top:50px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
    }
+
+   #partners-2 {
+  margin-bottom:50px;
+  margin-top: 0px;
+   }
+
+#team-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .call-to-action-caption-about {
 	text-align: center;
@@ -2245,6 +2409,13 @@ p.solutions-caption-specific {
 #careers-container {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+a.working {
+  margin-top: 15px;
+  padding-top: 5px;
+  border-top: 1px solid #eee;
+  display:block;
 }
 
 .light h1.hero-left-career strong {
@@ -2311,10 +2482,10 @@ a.position-nav {
 
 
 h2.about {
-  font-weight: 100;
+  font-weight: 300;
   margin-top:0px;
   width: 90%;
-  font-size: 36px;
+  font-size: 20px;
   letter-spacing: -0.5px;
   color:#000;
   line-height: 130%;
@@ -2340,13 +2511,12 @@ p.about-sub {
 
 h3.title {
   margin-top: 0px;
-  color:#333;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 12px;
-  font-weight:600;
+  color:#999;
+  font-size: 20px;
+  font-weight:100;
   line-height:140%;
   margin-bottom:20px;
+  line-height: 110%
 }
 
 h3.subheader {
@@ -2624,8 +2794,8 @@ p.purpose-bio {
 }
 
 h3.bod-name {
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 300;
   color:#111;
   margin-bottom:5px;
 }
@@ -2633,14 +2803,14 @@ h3.bod-name {
 h3.bod-title {
   margin-bottom: 5px;
   margin-top: 0px;
-  color:#bbb;
-  font-size: 12px;
-  font-weight:500;
+  color:#999;
+  font-size: 14px;
+  font-weight:100;
   line-height:140%;
 }
 
 a.read-bio {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 14px;
 }
 
