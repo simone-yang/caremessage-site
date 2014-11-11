@@ -1167,6 +1167,8 @@ a.trial:hover {
 
 }
 
+.carousel-indicators {bottom: 0px;}
+
 .carousel-blur {
   height: 60px;
   margin-top: 10px;
@@ -1208,6 +1210,7 @@ position: absolute;
 top: 50%;
 z-index: 5;
 display: inline-block;
+font-size: 30px;
 }
 
 #product-1-overview {
@@ -2390,6 +2393,11 @@ p.solutions-caption-specific {
   height:400px;
    }
 
+#carousel-about .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control i.fa {
+  color:#333;
+  text-shadow: none;
+}
+
 #team-hero {
   background-image: url('/images/team-hero.jpg');
   background-size:cover !important;
@@ -2840,7 +2848,7 @@ body#welcome-blog .container {
 }
 
 #blog-hero {
-  background-image: url('/images/blog-hero.jpg');
+  background-image: url('/images/programs-hero-2.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center bottom;
@@ -2848,7 +2856,7 @@ body#welcome-blog .container {
   }
 
 #blog-body {
-  background-image: url('/images/blog-hero-blurred.jpg');
+  background-image: url('/images/programs-hero-2-blur.jpg');
   background-size:cover !important;
   background-attachment:fixed;
   background-position: center bottom;
