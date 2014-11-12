@@ -714,7 +714,6 @@ img.hero-special  {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 img.sub-hero-above {
@@ -923,7 +922,6 @@ div.homepage-video {
   overflow: hidden;
   background: url('/images/programs-hero-2.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 h1.video-hero {
@@ -1161,7 +1159,6 @@ a.trial:hover {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-  background-attachment: fixed;
   padding-bottom: 0px;
   color: #fff;
 
@@ -1178,7 +1175,6 @@ a.trial:hover {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .carousel-caption {
@@ -1234,7 +1230,6 @@ font-size: 30px;
 
 #mobile-module {
   background-image: url('/images/mobile-hero-blur.jpg');
-  background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
   height:450px;
@@ -1266,7 +1261,6 @@ font-size: 30px;
 
 #platform-module {
   background-image: url('/images/product-bg-blur.jpg');
-  background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
   height:450px;
@@ -1395,7 +1389,7 @@ p.module a:hover {
     font-size: 32px;
     text-align:center;
     letter-spacing: -1px;
-    
+
 }
 
 .light h1.hero-center strong {
@@ -1415,7 +1409,7 @@ p.module a:hover {
     font-size: 32px;
     text-align:left;
     letter-spacing: -1px;
-    
+
 }
 
 .light h1.hero-left strong {
@@ -1434,7 +1428,7 @@ p.module a:hover {
     font-size: 32px;
     text-align:left;
     letter-spacing: -1px;
-    
+
 }
 
 .light h1.hero-left-1 strong {
@@ -1548,7 +1542,6 @@ video.product-video {
 
 #programs-hero {
   background-image: url('/images/mobile-hero.jpg');
-  background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
   background-position-y: -75px;
@@ -1585,9 +1578,8 @@ body#product-programs .primary-nav .navbar-nav>li>a, body#product-programs .prim
 }
 
 #programs-body {
-    background-size: cover;
-   background-image: url('/images/mobile-hero-blur.jpg');
-  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('/images/mobile-hero-blur.jpg');
 }
 
 #programs-body p {
@@ -1595,9 +1587,8 @@ body#product-programs .primary-nav .navbar-nav>li>a, body#product-programs .prim
 }
 
 #programs-header {
-      background-size: cover;
-   background-image: url('/images/mobile-hero.jpg');
-  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('/images/mobile-hero.jpg');
 }
 
 .programs-hero-caption {
@@ -1612,8 +1603,7 @@ body#product-programs .primary-nav .navbar-nav>li>a, body#product-programs .prim
   color: #fff;
   background-size: cover;
   text-align:center;
-   background-image: url('/images/mobile-hero-blur.jpg');
-  background-attachment: fixed;
+  background-image: url('/images/mobile-hero-blur.jpg');
 }
 
 .programs-hero-caption p.programs {
@@ -1700,7 +1690,6 @@ body#welcome-mobile .container {
 
 #mobile-hero {
   background-image: url('/images/mobile-hero.jpg');
-  background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
   padding-bottom: 50px;
@@ -2058,14 +2047,12 @@ h1.hero-grey {
 #solutions-hero {
   background-image: url('/images/partners-hero.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   color: #fff;
 }
 
 #solutions-body {
   background-image: url('/images/partners-hero-blur.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   border-top: 1px solid rgba(255,255,255,0.25);
 }
 
@@ -2134,7 +2121,6 @@ span.chevron {font-size: 30px;}
   padding: 50px 0px;
   text-align:center;
   background-size:cover;
-  background-attachment:fixed;
   background-position: center center;
   }
 
@@ -2143,7 +2129,6 @@ span.chevron {font-size: 30px;}
    ============================ */
 
 .solutions {
-  background-attachment: fixed;
   color: #000;
   position: relative;
   text-align:center;
@@ -2171,7 +2156,6 @@ p.solutions-caption-specific {
 #clinics-header {
   background-image: url('/images/solutions-clinics-hero.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
    }
 
 #clinics-body {
@@ -2185,14 +2169,11 @@ p.solutions-caption-specific {
 #hospitals-header {
   background-image: url('/images/solutions-hospitals.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
-
-
-   }
+}
 
 #hospitals-body {
   background-image: url('/images/solutions-hospitals-blur.jpg');
-  }
+}
 
 /* ============================
    Section 8.3 - Solutions - Payers
@@ -2201,10 +2182,7 @@ p.solutions-caption-specific {
 #payers-header {
   background-image: url('/images/solutions-payers.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
-
-
-   }
+}
 
 #payers-body {
   background-image: url('/images/solutions-payers-blur.jpg');
@@ -2217,10 +2195,7 @@ p.solutions-caption-specific {
 #organizers-header {
   background-image: url('/images/solutions-organizers.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
-
-
-   }
+}
 
 #organizers-body {
   background-image: url('/images/solutions-organizers-blur.jpg');
@@ -2234,10 +2209,7 @@ p.solutions-caption-specific {
 #researchers-header {
   background-image: url('/images/solutions-researchers.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
-
-
-   }
+}
 
 #researchers-body {
   background-image: url('/images/solutions-researchers-blur.jpg');
@@ -2250,10 +2222,7 @@ p.solutions-caption-specific {
 #government-header {
   background-image: url('/images/solutions-govt-bg.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
-
-
-   }
+}
 
 #government-body {
   background-image: url('/images/solutions-govt-bg-blur.jpg');
@@ -2314,15 +2283,12 @@ p.solutions-caption-specific {
 
 @media (max-width: 970px) {
   .secondary-nav .container .navbar-header {
-  text-align:left!important;
+    text-align:left!important;
   }
 
   .secondary-nav .container {
-  width:100%!important;
+    width:100%!important;
   }
-
-
-
   .secondary-nav #contact-form-toggle {
     right:50px;
     display:block!important;
@@ -2333,13 +2299,9 @@ p.solutions-caption-specific {
   .secondary-nav a.open-contact:hover:after {display:none;}
 
   .secondary-nav a.open-menu:hover:before {display:none;}
-
-
-
 }
 
 @media (max-width: 767px) {
-
   .secondary-nav #menu-toggle {
     display:block!important;
     position: absolute;
@@ -2388,10 +2350,9 @@ p.solutions-caption-specific {
 #about-hero {
   background-image: url('/images/about-hero.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center center;
   height:400px;
-   }
+}
 
 #carousel-about .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control i.fa {
   color:#333;
@@ -2401,15 +2362,13 @@ p.solutions-caption-specific {
 #team-hero {
   background-image: url('/images/team-hero.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center center;
   height:400px;
-   }
+}
 
   #careers-hero {
   background-image: url('/images/careers-hero.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center center;
   height:600px;
    }
@@ -2596,7 +2555,6 @@ p.bio {
 #bio-container {
   padding: 100px 0px;
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center center;
   border-top: 1px solid rgba(255,255,255,0.25);
   border-bottom: 1px solid rgba(255,255,255,0.25);
@@ -2738,7 +2696,6 @@ span.bod-link {
 #values-hero {
   background-image: url('/images/values-hero.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center center;
   height:100%;
 }
@@ -2747,7 +2704,6 @@ span.bod-link {
   border-top: 1px solid rgba(255,255,255,0.25);
   background-image: url('/images/values-hero-blur.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center center;
   background-color: rgba(0,0,0,0.75);
   padding: 100px 0px;
@@ -2850,7 +2806,6 @@ body#welcome-blog .container {
 #blog-hero {
   background-image: url('/images/programs-hero-2.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center bottom;
   height:650px;
   }
@@ -2858,10 +2813,9 @@ body#welcome-blog .container {
 #blog-body {
   background-image: url('/images/programs-hero-2-blur.jpg');
   background-size:cover !important;
-  background-attachment:fixed;
   background-position: center bottom;
   border-top: 1px solid rgba(255,255,255,0.25);
-   }
+}
 
 ol.tumblr_posts {
   list-style: none;
@@ -2928,3 +2882,12 @@ a.video-hero-call:hover {
 	color:#000;
 }
 
+@media (min-width: 1020px) {
+  div.homepage-video, #solutions-hero, #solutions-body, .solutions-body, #clinics-header, #hospitals-header,
+  #payers-header, #organizers-header, #researchers-header, #government-header, #about-hero, #team-hero,
+  #careers-hero, #bio-container, #values-hero, #values-container, #blog-hero, #blog-body, img.hero-special,
+  #product-1, .carousel-blur, #mobile-module, #platform-module, #programs-hero, #programs-body, #programs-header,
+  .programs-hero-caption, #mobile-hero, .solutions {
+    background-attachment: fixed;
+  }
+}
