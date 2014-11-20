@@ -2798,7 +2798,7 @@ a.read-bio .glyphicon{
    ============================ */
 
 body#welcome-blog .container {
-  max-width: 750px;
+  max-width: 970px;
 }
 
 #blog-hero {
@@ -2817,7 +2817,7 @@ body#welcome-blog .container {
 
 ol.tumblr_posts {
   list-style: none;
-  padding: 0px;
+  padding: 0px 100px 0px 100px;
   margin: 100px 0px;
 }
 
@@ -2856,8 +2856,8 @@ li.tumblr_post {
 }
 
 .tumblr_body img {
-width: 100%;
-margin: 10px 0px;
+  width: 100%;
+  margin: 10px 0px;
 }
 
 a.video-hero-call {

@@ -117,6 +117,8 @@ display: inline;
         </div>
         <li><a class="navigation close-menu" href="//blog.caremessage.org">Blog</a></li>
         <li><a class="navigation close-menu" href="//caremessage.org/about">About</a></li>
+        <li><a class="navigation close-menu" href="//caremessage.org/team">Team</a></li>
+        <li><a class="navigation close-menu" href="//caremessage.org/careers">Careers</a></li>
       </ul>
     </nav>
 
@@ -152,7 +154,7 @@ display: inline;
               <span class="icon-bar"></span>
             </button>
            <!--<a class="navbar-brand" href="#">caremessage</a>-->
-           <a href="{BlogURL}"><img class="logo-main" src="http://caremessage.org/images/logo.png"></a>
+           <a href="{BlogURL}"><img class="logo-main" src="http://caremessage.org/images/logo.png" /></a>
           </div>
 
           <div class="navbar-collapse collapse" id="menu-toggle">
@@ -175,7 +177,7 @@ display: inline;
 
           <div class="navbar-header">
             <!--<a class="navbar-brand" href="#">caremessage</a>-->
-            <a href="{BlogURL}"><img class="logo-main" src="http://caremessage.org/images/logo-dark.png"></a>
+            <a href="{BlogURL}"><img class="logo-main" src="http://caremessage.org/images/logo-dark.png" /></a>
           </div>
 
           <div class="navbar-collapse collapse" id=menu-toggle>
@@ -236,7 +238,7 @@ display: inline;
            <li class="reblog-control" style="margin-top: 8px;">{ReblogButton}</li>
 
         <li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a></li>
-                                                                   <li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li>
+        <li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li>
 
              </li>
 
@@ -331,19 +333,19 @@ display: inline;
             {/block:NextPage}{/block:Pagination}
       </div>
 
-      <footer>
+       <footer>
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <nav class="footer-nav">
-                <ul class="col-xs-3 col-sm-2 col-md-2 ul-product">
+                <ul class="col-xs-2 ul-product">
                   <li class="footer-nav-heading">Product</li>
                   <li><a href="//caremessage.org/platform/">Platform</a></li>
                   <li><a href="//caremessage.org/programs/">Programs</a></li>
                   <li><a href="//caremessage.org/mobile/">Why Mobile?</a></li>
                 </ul>
 
-                <ul class="col-xs-3 col-sm-2 col-md-2 ul-partners">
+                <ul class="col-xs-2 ul-partners">
                   <li class="footer-nav-heading">Solutions</li>
                   <li><a href="//caremessage.org/solutions/clinics/">Clinics</a></li>
                   <li><a href="//caremessage.org/solutions/hospitals/">Hospitals</a></li>
@@ -353,13 +355,23 @@ display: inline;
                   <li><a href="//caremessage.org/solutions/organizers/">Organizers</a></li>
                 </ul>
 
-                <ul class="col-xs-3 col-sm-2 col-md-2 ul-about">
-                  <li class="footer-nav-heading">About</li>
-                  <li><a href="//caremessage.org/about#team">Team</a></li>
-                  <li><a href="//caremessage.org/about#values">Values</a></li>
-                  <li><a href="//blog.caremessage.org">Blog</a></li>
-                  <li><a href="https://app.caremessage.org/terms_of_use/" target=_blank>Terms of Use</a></li>
-                  <li><a href="https://app.caremessage.org/privacy_policy/" target=_blank>Privacy Policy</a></li>
+                <ul class="col-xs-2 ul-about">
+                  <li class="footer-nav-heading">Company</li>
+                  <li><a href="//caremessage.org/about">About</a></li>
+                  <li><a href="//caremessage.org/team">Team</a></li>
+                  <li><a href="//caremessage.org/careers">Careers</a></li>
+                  <li><a href="//blog.caremessage.org/">Blog</a></li>
+                </ul>
+
+
+                <ul class="col-xs-6 ul-contact">
+                  <li class="footer-nav-heading">Contact</li>
+                  <li><a target=_blank href="https://www.google.com/maps/place/300+Brannan+St,+San+Francisco,+CA+94107/@37.7818412,-122.3925962,15z/data=!4m2!3m1!1s0x808580785db9302f:0x474dafebb820d003"><img src="http://caremessage.org/images/contact-map.png" class="map" /></a></li>
+                  <li class=contact><i class="fa fa-map-marker"></i> 300 Brannan Street, San Francisco, CA 94107</li>
+                  <li class=contact><i class="fa fa-phone"></i> (415) 500 2745</li>
+                  <li class=contact><i class="fa fa-twitter"></i> <a href="http://twitter.com/caremessage" target=_blank>Follow @caremessage</a></li>
+                  <li class=contact><i class="fa fa-facebook"></i> <a href="http://facebook.com/caremessage" target=_blank>Like us on Facebook</a></li>
+                  <li class=contact><i class="fa fa-paper-plane"></i> <a class=open-contact>Send us a Message</a></li>
                 </ul>
               </nav>
             </div>
@@ -367,15 +379,7 @@ display: inline;
 
           <hr/>
 
-          &copy; 2014 caremessage
-          <div class="social-icons-container">
-            <a href="http://blog.caremessage.org/rss/" target="_blank">
-            <img class="social-icon" src="http://caremessage.org/images/rss.png">
-            <a href="http://facebook.com/caremessage/" target="_blank">
-            <img class="social-icon" src="http://caremessage.org/images/fb-icon.png">
-            <a href="http://twitter.com/caremessage/" target="_blank">
-            <img class="social-icon" src="http://caremessage.org/images/tw-icon.png">
-            </div>
+          <p class=copyright>&copy; 2014 caremessage &#8226; <a href="https://app.caremessage.org/terms_of_use/" target=_blank>Terms of Use</a> &#8226; <a href="https://app.caremessage.org/privacy_policy/" target=_blank>Privacy Policy</a></p>
         </div>
       </footer>
 
