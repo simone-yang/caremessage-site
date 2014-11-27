@@ -93,10 +93,14 @@ $(document).mouseup(function (e)
  });
 
  $(function(){
-  $.stellar({
-    horizontalScrolling: false,
-    verticalOffset: 40
-  });
+  try {
+    $.stellar({
+      horizontalScrolling: false,
+      verticalOffset: 40
+    });
+  } catch(err) {
+    // nothing
+  }
 });
 
 
