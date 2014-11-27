@@ -24,7 +24,8 @@ $(function () {
   var url = window.location.toString();
   if (url.indexOf('#') > -1) {
     var element = $('a[href=#'+url.split('#')[1]+']');
-    element.tab('show');
-    $('html, body').scrollTop($("#careers-container").offset().top);
+    element.one('shown.bs.tab', function () {
+      $('html, body').scrollTop($("#careers-container").offset().top);
+    }).tab('show');
   }
 });
