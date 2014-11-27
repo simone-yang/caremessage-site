@@ -5,7 +5,9 @@ $(function () {
 
   // Change hash for page-reload
   $('a.position-nav').on('click', function (e) {
-    window.location.hash = e.target.hash;
+    if(e.target.hash) {
+      window.location.hash = e.target.hash;
+    }
   });
 
   // Javascript to enable link to tab
@@ -14,7 +16,7 @@ $(function () {
     var element = $('a[href=#'+url.split('#')[1]+']');
     element.tab('show');
     $('html, body').animate({
-        scrollTop: element.offset().top
+        scrollTop: $("#careers-container").offset().top
     }, 0);
   }
 });
