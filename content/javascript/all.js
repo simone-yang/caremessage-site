@@ -5,3 +5,4 @@
 //= require include/jquery_placeholder.js
 //= require include/stellar_min.js
 //= require include/application.js
+//= require include/careers.js
