@@ -3,20 +3,28 @@ $(function () {
     return;
   }
 
+  var getHash = function ($anchor) {
+    var hash = $anchor.prop('hash');
+    if (typeof hash != 'string') {
+      hash = '#' + $anchor.prop('href').split('#').pop();
+    }
+    return hash;
+  };
+
   // Change hash for page-reload
   $('a.position-nav').on('click', function (e) {
-    if(e.target.hash) {
-      window.location.hash = e.target.hash;
+    var $target = $(e.target).closest('a');
+    var hash = getHash($target);
+    if(hash && hash != '#') {
+      window.location.hash = hash;
     }
   });
 
   // Javascript to enable link to tab
-  var url = document.location.toString();
-  if (url.match('#')) {
+  var url = window.location.toString();
+  if (url.indexOf('#') > -1) {
     var element = $('a[href=#'+url.split('#')[1]+']');
     element.tab('show');
-    $('html, body').animate({
-        scrollTop: $("#careers-container").offset().top
-    }, 0);
+    $('html, body').scrollTop($("#careers-container").offset().top);
   }
 });
