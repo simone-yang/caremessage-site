@@ -2889,3 +2889,42 @@ a.video-hero-call:hover {
     background-attachment: fixed;
   }
 }
+
+/* Gift */
+
+.gift-container {
+  text-align:left;
+}
+
+h1.gift-hero {
+  text-shadow: 0px 0px 0px transparent;
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:0px;
+  line-height:130%;
+}
+
+h2.gift-hero-sub {
+  text-shadow: 0px 0px 0px transparent;
+  font-size:20px;
+  font-weight:100;
+  margin-top:0px;
+  max-width:350px;
+  line-height:130%;
+}
+
+a.gift-link {
+  color:#fff;
+  font-size: 16px;
+  font-weight:500;
+  display:block;
+}
+
+a.gift-link i.fa {
+  margin-left:2px;
+  font-size: 13px;
+}
+
+a.gift-link:hover{
+  text-decoration: underline;
+}
