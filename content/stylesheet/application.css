@@ -2898,19 +2898,20 @@ a.video-hero-call:hover {
 
 h1.gift-hero {
   text-shadow: 0px 0px 0px transparent;
-  font-size:20px;
+  font-size:16px;
   font-weight:600;
   margin-bottom:0px;
-  line-height:130%;
+  line-height:150%;
+  max-width:410px;
 }
 
 h2.gift-hero-sub {
   text-shadow: 0px 0px 0px transparent;
-  font-size:20px;
+  font-size:16px;
   font-weight:100;
   margin-top:0px;
-  max-width:350px;
-  line-height:130%;
+  max-width:410px;
+  line-height:150%;
 }
 
 a.gift-link {
@@ -2927,4 +2928,31 @@ a.gift-link i.fa {
 
 a.gift-link:hover{
   text-decoration: underline;
+}
+
+#video .modal-dialog {
+  width:800px;
+  height:auto;
+}
+
+#video .modal-body {
+  margin-bottom: -6px;
+  padding: 0px;
+}
+
+a.donate-gift {
+background-color: rgba(0,0,0,0.8);
+color: #f8f8f8;
+opacity: .3;
+padding: 2px 8px 1px;
+font-size: 11px;
+font-weight: 600;
+text-transform: uppercase;
+border-radius: 3px;
+display: inline-block;
+margin-top: 15px;
+}
+
+a.donate-gift:hover {
+  opacity: 0.9;
 }
