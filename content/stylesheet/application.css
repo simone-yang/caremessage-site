@@ -2896,6 +2896,32 @@ a.video-hero-call:hover {
   text-align:left;
 }
 
+h1.holiday {
+    text-shadow: 0px 0px 0px transparent;
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:0px;
+  line-height:150%;
+  max-width:410px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  color:#fff;
+}
+
+h2.holiday-sub {
+  text-shadow: 0px 0px 0px transparent;
+  font-size:16px;
+  font-weight:100;
+  margin-top:0px;
+  max-width:410px;
+  line-height:150%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  color:#eee;
+}
+
 h1.gift-hero {
   text-shadow: 0px 0px 0px transparent;
   font-size:16px;
@@ -2955,4 +2981,58 @@ margin-top: 15px;
 
 a.donate-gift:hover {
   opacity: 0.9;
+}
+
+.vimeo {
+  margin: 25px auto;
+  display:block;
+  width:720px;
+}
+
+body#holidays-2 .master {
+        background-image: url('/images/holiday-bg.jpeg');
+      background-position: top center;
+      background-size:cover;
+}
+
+.holiday-container {
+
+      padding-top:75px;
+}
+
+img.gift-icon {
+  margin-top: 50px;
+  width:50px;
+  height:50px;
+}
+
+.coa {
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align:center;
+}
+
+a.nominate {
+  font-size:22px;
+  font-weight:300;
+  color:#333;
+  border-radius:3px;
+  border: 1px solid #333;
+  padding: 3px 8px 2px;
+}
+
+a.nominate:hover {
+  background-color:#333;
+  color:#fff;
+}
+
+a.donate {
+  font-size:22px;
+  color:#888;
+  font-weight:300;
+  margin-left:10px;
+}
+
+a.donate:hover {
+  text-decoration: underline;
 }
