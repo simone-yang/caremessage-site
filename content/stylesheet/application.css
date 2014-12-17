@@ -2989,7 +2989,7 @@ a.donate-gift:hover {
   width:720px;
 }
 
-body#holidays-2 .master {
+body#holidays .master {
         background-image: url('/images/holiday-bg.jpeg');
       background-position: top center;
       background-size:cover;
