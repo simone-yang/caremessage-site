@@ -24,19 +24,22 @@ body_id: team
 <p class=about-sub>Click on a picture to learn more about each team member.</p>
 </div>
 
-
+<div class="tab-pane fade" id="cecilia-bio">
+<h2 class=about>Cecilia Corral</h2>
+<h3 class=title>Vice President of Product<br/>Co-Founder</h3>
+<p class=bio>Cecilia oversees all aspects of product development, including the core CareMessage application and associated disease management content. She works with partner organizations and patients to design, test and refine CareMessage products. She is proficient in the process of human-centered design pioneered by the Hasso Plattner Institute of Design (d.school) at Stanford University, where she graduated with a degree in Product Design Engineering. A native Spanish speaker who grew up in South Texas and Mexico, Cecilia helps ensure that all CareMessage programs accommodate the cultural and linguistic needs of our minority patients.</p>
+</div>
 
 <div class="tab-pane fade" id="manuel-bio">
 <h2 class=about>Manuel Rivera, MS</h2>
-<h3 class=title>Chief Product Officer<br/>Co-Founder</h3>
-<p class=bio>Manuel Rivera is a software engineer who leads all aspects of CareMessage's product development. He comes to the organization with a passion for health IT and expertise with real-time client-server communication, computer graphics, and interaction design. Manuel has an MS in Telecommunication Engineering from the Technical School of Madrid (UPM) with a specialty in Biomedical Engineering and has studied the social impact of technology at UC Berkeley.</p>
+<h3 class=title>Director of Health Informatics<br/>Co-Founder</h3>
+<p class=bio>Manuel Rivera is a software engineer who leads all aspects of privacy, security and interoperability for CareMessage's core product. He comes to the organization with a passion for health IT and expertise with real-time client-server communication, computer graphics, and interaction design. Manuel has an MS in Telecommunication Engineering from the Technical School of Madrid (UPM) with a specialty in Biomedical Engineering and has studied the social impact of technology at UC Berkeley.</p>
 </div>
 
-
-<div class="tab-pane fade" id="cecilia-bio">
-<h2 class=about>Cecilia Corral</h2>
-<h3 class=title>Chief Design Officer<br/>Co-Founder</h3>
-<p class=bio>Cecilia leads ​all design aspects of the CareMessage​ experience for patients and staff members​. She works with partner organizations and clients to​ design,​ test and refine CareMessage products. She is proficient in the process of ​human-centered design pioneered by the Hasso Plattner Institute of Design (d.school) at Stanford University​, where she​ graduated with a degree in Product Design​ Engineering. ​A native Spanish speaker who grew up in ​South Texas and ​Mexico​, Cecilia helps ensure that ​all ​CareMessage programs accommodate the cultural and linguistic needs ​of our minority patients.</p>
+<div class="tab-pane fade" id="daniel-bio">
+<h2 class=about>Daniel Naves</h2>
+<h3 class=title>Engineering Manager</h3>
+<p class=bio>Daniel is a full stack software engineer with over 10 years of experience, and has expertise in Ruby on Rails, Javascript, HTML, CSS, Git, SASS, and HAML. He has previously built multiple web and mobile platforms for both startups and Fortune 500 companies, and loves working on important projects that can have a significant impact.</p>
 </div>
 
 <div class="tab-pane fade" id="patricia-bio">
@@ -45,12 +48,11 @@ body_id: team
 <p class=bio>Patricia helps develop many of CareMessage's programs, especially those focused on childhood and adolescence health issues. She comes to the organization with a passion to improve health literacy among low income populations. She has over 8 years of experience creating health education materials that are both culturally and low literacy appropriate.  She has worked with a Medi-Cal managed care population at the Contra Costa Health Plan, and holds a Masters in Public Health (MPH) from San Diego State University.</p>
 </div>
 
-<div class="tab-pane fade" id="daniel-bio">
-<h2 class=about>Daniel Naves</h2>
-<h3 class=title>Vice President of Engineering</h3>
-<p class=bio>Daniel is a full stack software engineer with over 10 years of experience, and has expertise in Ruby on Rails, Javascript, HTML, CSS, Git, SASS, and HAML. He has previously built multiple web and mobile platforms for both startups and Fortune 500 companies, and loves working on important projects that can have a significant impact.</p>
+<div class="tab-pane fade" id="karen-bio">
+<h2 class=about>Karen Finch, MD</h2>
+<h3 class=title>Product Manager, Mental Health</h3>
+<p class=bio>Karen helps in the development of CareMessage's mental health specific programs through targeted clinical consultation. She is passionate about making mental health tools more accessible to larger populations and integrating mental health care more seamlessly into primary care. Karen is currently finishing her fellowship in Child & Adolescent Psychiatry at the University of California, San Francisco (UCSF). She completed her undergraduate work at the University of California, Los Angeles (UCLA) in Spanish Literature, and completed both medical school and General Adult Psychiatry Residency at UCSF.</p>
 </div>
-
 
 <div class="tab-pane fade" id="bruno-bio">
 <h2 class=about>Bruno Campos</h2>
@@ -62,12 +64,6 @@ body_id: team
 <h2 class=about>Gabriel Gilini</h2>
 <h3 class=title>Software Engineer</h3>
 <p class=bio>Gabriel is a full stack software engineer with broad experience in Ruby on Rails, Javascript, HTML5, Git, CSS and its flavours. In his 8 years of industry experience he worked in several roles with projects varying greatly in length and expertise area.</p>
-</div>
-
-<div class="tab-pane fade" id="karen-bio">
-<h2 class=about>Karen Finch, MD</h2>
-<h3 class=title>Product Manager, Mental Health</h3>
-<p class=bio>Karen helps in the development of CareMessage's mental health specific programs through targeted clinical consultation. She is passionate about making mental health tools more accessible to larger populations and integrating mental health care more seamlessly into primary care. Karen is currently finishing her fellowship in Child & Adolescent Psychiatry at the University of California, San Francisco (UCSF). She completed her undergraduate work at the University of California, Los Angeles (UCLA) in Spanish Literature, and completed both medical school and General Adult Psychiatry Residency at UCSF.</p>
 </div>
 
 <div class="tab-pane fade" id="ronaldo-bio">
@@ -95,11 +91,11 @@ body_id: team
 <div class=col-xs-7>
 
 	<div class="row bio-row">
-	<div class=col-xs-2><a href="#manuel-bio" data-toggle="tab"><%= image_tag("about-manuel-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Manuel</p></a></div>
 	<div class=col-xs-2><a href="#cecilia-bio" data-toggle="tab"><%= image_tag("about-cecilia-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Cecilia</p></a></div>
+	<div class=col-xs-2><a href="#manuel-bio" data-toggle="tab"><%= image_tag("about-manuel-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Manuel</p></a></div>
+	<div class=col-xs-2><a href="#daniel-bio" data-toggle="tab"><%= image_tag("about-daniel-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Daniel</p></a></div>
 	<div class=col-xs-2><a href="#patricia-bio" data-toggle="tab"><%= image_tag("about-patricia-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Patricia</p></a></div>
 	<div class=col-xs-2><a href="#karen-bio" data-toggle="tab"><%= image_tag("karen-thumb.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Karen</p></a></div>
-	<div class=col-xs-2><a href="#daniel-bio" data-toggle="tab"><%= image_tag("about-daniel-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Daniel</p></a></div>
 	<div class=col-xs-2><a href="#bruno-bio" data-toggle="tab"><%= image_tag("about-bruno-hero.jpg", class: "tab-bio-circle") %><p class=tab-bio-caption>Bruno</p></a></div>
 	</div><!--.row-->
 
@@ -141,13 +137,13 @@ body_id: team
 <div class="tab-pane fade" id="grace-bio">
 <h2 class=about>Grace Myers</h2>
 <h3 class=title>Director of Account Services</h3>
-<p class=bio>Grace works with clinics and health centers across the country and is passionate about helping our partner organizations and the patients they serve. She loves empowering health care providers with more efficient ways to serve their patient populations. Prior to joining CareMessage, Grace worked for a top management consulting firm and has experience helping diverse health care organizations adopt new technologies.  She graduated from UCLA with a BA in Business Economics.  Outside of her professional career, Grace has worked with a number of non-profit health education organizations, most notably supporting children with parents fighting cancer.</p>
+<p class=bio>Grace oversees the implementation and ongoing support of CareMessage's portfolio of existing and new partners and is passionate about helping our partner organizations and the patients they serve. She loves empowering health care providers with more efficient ways to serve their patient populations. Prior to joining CareMessage, Grace worked for a top management consulting firm and has experience helping diverse health care organizations adopt new technologies.  She graduated from UCLA with a BA in Business Economics.  Outside of her professional career, Grace has worked with a number of non-profit health education organizations, most notably supporting children with parents fighting cancer.</p>
 </div>
 
 <div class="tab-pane fade" id="fiona-bio">
 <h2 class=about>Fiona Angel</h2>
 <h3 class=title>Account Manager</h3>
-<p class=bio>Fiona guides the launch process for new customers and oversees customer relations. She comes to CareMessage with a background in emergency services in Israel, and public health outreach in Eastern Europe and Central Asia. Fiona is interested in implementing scalable, low-cost solutions to preventable conditions, and reaching populations that have traditionally lacked access to health care. Her idols include Paul Farmer, Jimmy Carter, and Tintin. She received her bachelor's degree in Human Biology from Stanford.</p>
+<p class=bio>Fiona helps guide the launch process and ongoing support for CareMessage's partner organizations. She comes to CareMessage with a background in emergency services in Israel, and public health outreach in Eastern Europe and Central Asia. Fiona is interested in implementing scalable, low-cost solutions to preventable conditions, and reaching populations that have traditionally lacked access to health care. Her idols include Paul Farmer, Jimmy Carter, and Tintin. She received her bachelor's degree in Human Biology from Stanford.</p>
 </div>
 
 <div class="tab-pane fade" id="jesse-bio">
@@ -191,7 +187,7 @@ body_id: team
 
 <div class="tab-pane fade" id="greg-bio">
 <h2 class=about>Greg Burrell, MD</h2>
-<h3 class=title>Vice President of Research and Clinical Solutions</h3>
+<h3 class=title>Director of Research and Clinical Solutions</h3>
 <p class=bio>Greg leads the clinical review and oversight of CareMessage's programs and works with the Scientific Advisory Board to produce high-quality data to help drive informed decisions about CareMessage's clinical products. He comes to the organization with a passion to educate and empower patients to make smarter healthcare decisions, as well as creating and implementing new technologies to improve healthcare outcomes. Greg is currently an Assistant Professor of Clinical Medicine at the University of California, San Francisco (UCSF). He received his bachelors degree from Northwestern, his medical degree from the Pritzker School of Medicine at the University of Chicago, and completed his internal medicine residency at UCSF.</p>
 </div>
 
