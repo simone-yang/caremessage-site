@@ -2421,6 +2421,10 @@ ul.career-sub-list li.first {
   list-style:none;
 }
 
+ul.career-sub-list li.subsection {
+  list-style:none;
+}
+
 a.position-nav {
   font-size: 16px;
   font-weight: 100;
