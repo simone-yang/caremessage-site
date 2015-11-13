@@ -34,8 +34,6 @@ function careersJobBuilder(data) {
   var positionPlaceHolder = $(".js-positions");
   for(var i = 0; i < data.jobs.length; i++) {
     var job = data.jobs[i];
-    console.log(job);
-    console.log(job.absolute_url);
     positionPlaceHolder.after("<a href='" + job.absolute_url + "' class='position-nav' target='_blank'><strong>" + job.title + "</strong> (" + job.location.name + ")</a>");
   }
   careersApplyPageReload();
