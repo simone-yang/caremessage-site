@@ -188,9 +188,22 @@
     <script type="text/javascript">
       // Add a script element as a child of the body
       function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "/javascript/all.js";
-      document.body.appendChild(element);
+        var scripts = [
+          "/javascript/all.js"
+        ];
+
+        <% if @item[:append_javascript_url] %>
+          scripts.push("<%= @item[:append_javascript_url] %>");
+        <% end %>
+
+
+        for (var i = 0; i < scripts.length; i++) {
+          var s = document.createElement('script');
+          s.src = scripts[i];
+          s.type = "text/javascript";
+          s.async = false;
+          document.getElementsByTagName('head')[0].appendChild(s);
+        }
       }
 
       // Check for browser support of event handling capability
@@ -202,3 +215,4 @@
     </script>
   </body>
 </html>
+
